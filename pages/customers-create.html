@@ -114,7 +114,7 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content">
+      <div class="content" id="form">
         <div class="row">
           <div class="col-md-1">
             <div class="card card-user">
@@ -135,13 +135,27 @@
                     <div class="col-md-6 pr-1">
                       <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="First Name" required>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email@xyz.com">
                       </div>
                     </div>
                     <div class="col-md-6 pl-1">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last Name" required>
+                        <label>Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Phone #">
                       </div>
                     </div>
                   </div>                 
@@ -190,7 +204,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-6 pr-1">
                       <div class="form-group">
                         <label>Email</label>
@@ -204,9 +218,9 @@
                         pattern="\d{10}" title="Please enter 10 numeric digits for the phone number">
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="row">
-                    <div class="update ml-auto">
+                    <div class="update ml-auto mr-auto">
                       <button type="submit" class="btn btn-primary btn-round">Create Customer</button>
                     </div>
                     <div class="update mr-auto ml-auto">
@@ -214,10 +228,13 @@
                       onclick="window.location.href='customers.html'">Cancel</button>
                     </div>
                   </div>
-                </form>              
+                </form>
+              </div>
+              <button type="submit" class="btn btn-primary btn-round" onclick="window.location.href='customers.html'">Back</button>
+            </div>
           </div>
         </div>
-      </div>  
+      </div>v
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
@@ -239,6 +256,22 @@
       </footer>
     </div>
   </div>
+
+  <script>
+      userForm.getElementById('create').addEventListener('submit', function (event){
+
+        const firstname = document.getElementById('firstName').value;
+        const lastname = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phonenumber = document.getElementById('phoneNumber').value;
+
+        const customer = { firstname, lastname, email, phonenumber};
+
+        alert(customer.firstname + customer.lastname + customer.email + customer.phonenumber);
+        //output.innerHTML = `User Information:<br>First Name: ${custoemr.firstname}<br>Last Name: ${custoemr.firstname}<br>Email: ${customer.email}<br>Phone: ${customer.phonenumber}`;
+      });
+  </script>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
