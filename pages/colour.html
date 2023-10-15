@@ -34,7 +34,7 @@
               <p><strong>Dashboard</strong></p>
             </a>
           </li>
-          <li class="active ">
+          <li>
             <a href="./customers.html">
               <i class="bi bi-people"></i>
               <p><strong>Customers</strong></p>
@@ -46,14 +46,14 @@
               <p><strong>Equipment</strong></p>
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active ">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i id="dropdownIcon" class="bi bi-person-gear"></i>
               <strong>Management</strong>
             </a> 
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="./manufacturer.html">Category</a>
-              <a class="dropdown-item" href="colour.html">Colour</a>
+              <a class="dropdown-item" href="./manufacturer.html">Color</a>
               <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
             </div>
           </li>
@@ -127,51 +127,39 @@
       <!-- End Navbar -->
       <div class="content">
           <!-- Customer List -->
-          <button type="submit" class="btn btn-primary btn-round" onclick="window.location.href='customers-create.html'">Add Customer</button>
+          <button type="submit" class="btn btn-primary btn-round" onclick="window.location.href='colour-create.html'">Add Colour</button>
           <div class="row">
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title"> Customer List</h4>
+                  <h4 class="card-title">Colour List</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table">
                       <thead class=" text-primary">
                         <th>
-                          First Name
+                          Colour
                         </th>
-                        <th>
-                          Last Name
+                        <th class="text-center">
+                          Preview
                         </th>
-                        <th>
-                          Email
-                        </th>
-                        <th>
-                          Phone #
-                        </th>
-                        <th>
+                        <th class="text-right">
                           
                         </th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            John
-                          </td>
-                          <td>
-                            Doe
-                          </td>
-                          <td>
-                            jd@xyz.com
-                          </td>
-                          <td>
-                            (905) 123-4567
-                          </td>
+                            Red
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#FF0000" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
                             </button>
                           </td>
@@ -179,127 +167,97 @@
 
                         <tr>
                           <td>
-                            Jordan
-                          </td>
-                          <td>
-                            Dunn
-                          </td>
-                          <td>
-                            jd1@xyz.com
-                          </td>
-                          <td>
-                            (905) 836-1254
-                          </td>
+                            Orange
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#F39C12" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
 
                         <tr>
                           <td>
-                            Jeremy
-                          </td>
-                          <td>
-                            Dean
-                          </td>
-                          <td>
-                            jd2@xyz.com
-                          </td>
-                          <td>
-                            (905) 927-8184
-                          </td>
+                            Yellow
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#EEF820" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
 
                         <tr>
                           <td>
-                            Jane
-                          </td>
-                          <td>
-                            Day
-                          </td>
-                          <td>
-                            jd3@xyz.com
-                          </td>
-                          <td>
-                            (905) 836-1923
-                          </td>
+                            Green
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#20F820" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
 
                         <tr>
                           <td>
-                            Jill
-                          </td>
-                          <td>
-                            Davis
-                          </td>
-                          <td>
-                            jd4@xyz.com
-                          </td>
-                          <td>
-                            (905) 932-1541
-                          </td>
+                            Blue
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#206FF8" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
 
                         <tr>
                           <td>
-                            Jack
-                          </td>
-                          <td>
-                            Duncan
-                          </td>
-                          <td>
-                            jd5@xyz.com
-                          </td>
-                          <td>
-                            (905) 093-4512
-                          </td>
+                            Ingido
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#4B0082" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
 
                         <tr>
                           <td>
-                            Joseph
-                          </td>
-                          <td>
-                            Daniels
-                          </td>
-                          <td>
-                            jd6@xyz.com
-                          </td>
-                          <td>
-                            (905) 358-1492
-                          </td>
+                            Violet
+                          </td> 
+                          <td class="text-center">
+                            <input type="color" id="red" name="red" value="#8F00FF" disabled>
+                          </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Customer?')) { window.location.href='customers.html' }">
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>
+                            <button class="btn btn-danger btn-round" onclick="if(window.confirm('Delete Colour?')) { window.location.href='colour.html' }">
                               <i class="bi bi-trash3 h5"></i>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
