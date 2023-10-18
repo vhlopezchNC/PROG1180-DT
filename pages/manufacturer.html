@@ -135,8 +135,12 @@
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title"> Manufacturer List</h4>
-                <input type="text" id="userInput" onkeyup="myFunction()" class="form-control" placeholder="Search Manufacturer..." title="Type in a manufacturer">
-              </div>
+                <div class="pr-3 d-flex align-items-center">
+                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Manufacturer..." title="Type in a manufacturer">
+                  <span class="text-primary">
+                    <i class="bi bi-search ml-2 pr-2 h4"></i>
+                  </span>
+                </div></div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table" id="table">
