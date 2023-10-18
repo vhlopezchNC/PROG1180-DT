@@ -135,10 +135,11 @@
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Category List</h4>
+                <input type="text" id="userInput" onkeyup="myFunction()" class="form-control" placeholder="Search Category..." title="Type in a category">
               </div>
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table">
+                  <table class="table" id="table">
                     <thead class=" text-primary">
                       <th>
                         Name
@@ -209,8 +210,29 @@
               </div>
             </div>
           </div>
-
-
+        </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#" target="_blank">Blog</a></li>
+                <li><a href="#" target="_blank">Licenses</a></li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>, made by Web Genius
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -220,6 +242,8 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Search Bar-->
+  <script src="../assets/js/search-bar.js"></script>
 </body>
 
 </html>
