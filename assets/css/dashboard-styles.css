@@ -4,3 +4,7 @@
     border-color: #B1B1B1;
     border-style: solid;
 }
+
+.icon-hover:hover svg path{
+    fill: #7cd424;    
+}
