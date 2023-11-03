@@ -8,3 +8,24 @@
 .icon-hover:hover svg path{
     fill: #7cd424;    
 }
+
+/*dropdown styles and their options */
+.dropdown-options {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos cuando se pasa el mouse sobre las opciones */
+.dropdown-option:hover {
+    background-color: #f2f2f2;
+}

@@ -46,7 +46,7 @@
               <p><strong>Equipment</strong></p>
             </a>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
@@ -65,7 +65,7 @@
                 <a class="dropdown-item" href="">Technician</a>
             </div>
         </li>
-        <li>
+        <li class="active">
           <a href="./orders.html">
             <i class="bi bi-clipboard-check"></i>
             <p><strong>Orders</strong></p>
@@ -142,13 +142,13 @@
       <div class="content">
         <div class="row pr-3 mb-4">
           <button type="submit" class="btn btn-primary btn-round ml-auto" 
-          onclick="window.location.href='part-create.html'">Add Part</button>
+          onclick="window.location.href='order-create.html'">Add Order</button>
         </div>
         <div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">Part List</h4>
+                <h4 class="card-title">Order List</h4>
                 <div class="pr-3 d-flex align-items-center">
                   <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Part..." title="Type in a part">
                   <span class="text-primary">
@@ -162,27 +162,45 @@
                     <thead class=" text-primary">
                       <tr>
                         <th>
-                          Part Number
+                          Order Number
                         </th>
                         <th class="text-center">
+                          Date
+                        </th>
+                        <th class="text-center">
+                          Customer
+                        </th>
+                        <th class="text-center">
+                          Equipment
+                        </th>
+                        <th class="text-center d-none d-xxl-table-cell">
                           Description
                         </th>
                         <th class="text-center">
-                          Unit Price
-                        </th>    
+                          Warranty
+                        </th>     
                       </tr>
                       </thead>
                     <tbody>
                       <tr>
                         <td>
-                          LM001
+                          ES-2023-0001
                         </td>
                         <td class="text-center">
-                          Lawnmower Blade (21-inch, High-Lift)
+                          October 22, 2023
                         </td>
                         <td class="text-center">
-                          $15.99
-                        </td>     
+                          John Doe
+                        </td>
+                        <td class="text-center">
+                          Lawnmower H345
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Lawnmower Engine don't Start
+                        </td>  
+                        <td class="text-center">
+                          Yes
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
@@ -190,14 +208,23 @@
                       </tr>
                       <tr>
                         <td>
-                          LM002
+                          ES-2023-0002
                         </td>
                         <td class="text-center">
-                          Spark Plug (NGK BPR5ES)
+                          October 22, 2023
                         </td>
                         <td class="text-center">
-                          $3.49
-                        </td>    
+                          Jordan Dunn
+                        </td>
+                        <td class="text-center">
+                          Lawnmower PP56
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Excessive Vibration and Noise
+                        </td>  
+                        <td class="text-center">
+                          Yes
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
@@ -205,14 +232,23 @@
                       </tr>
                       <tr>
                         <td>
-                          LM003
+                          ES-2023-0003
                         </td>
                         <td class="text-center">
-                          Air Filter (Briggs & Stratton 491588S)
+                          October 23, 2023
                         </td>
                         <td class="text-center">
-                          $6.95
-                        </td>     
+                          Jeremy Dean
+                        </td>
+                        <td class="text-center">
+                          Recycler 24-inch
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Lawnmower Leaking Oil or Fuel
+                        </td>  
+                        <td class="text-center">
+                          No
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
@@ -220,14 +256,23 @@
                       </tr>
                       <tr>
                         <td>
-                          LM004
+                          ES-2023-0004
                         </td>
                         <td class="text-center">
-                          Gas Cap (Universal Fit)
+                          October 26, 2023
                         </td>
                         <td class="text-center">
-                          $2.99
-                        </td>    
+                          Joseph Daniels
+                        </td>
+                        <td class="text-center">
+                          Lawnmower PP56
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Lawnmower Pull Cord Jammed
+                        </td>  
+                        <td class="text-center">
+                          Yes
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
@@ -235,14 +280,23 @@
                       </tr>
                       <tr>
                         <td>
-                          LM005 
+                          ES-2023-0005
                         </td>
                         <td class="text-center">
-                          Carburetor Rebuild Kit (Kohler 25 757 11-S)
+                          October 29, 2023
                         </td>
                         <td class="text-center">
-                          $11.75
-                        </td>    
+                          Jill Davis
+                        </td>
+                        <td class="text-center">
+                          Automower
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Excessive Vibration and Noise
+                        </td>  
+                        <td class="text-center">
+                          No
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
@@ -250,19 +304,28 @@
                       </tr>
                       <tr>
                         <td>
-                          LM006
+                          ES-2023-0006
                         </td>
                         <td class="text-center">
-                          Drive Belt (Craftsman 144959)
+                          November 3, 2023
                         </td>
                         <td class="text-center">
-                          $12.45
-                        </td>    
+                          Jack Duncan
+                        </td>
+                        <td class="text-center">
+                          Recycler 26-inch
+                        </td>  
+                        <td class="text-center d-none d-xxl-table-cell">
+                          Lawnmower Leaking Oil or Fuel
+                        </td>  
+                        <td class="text-center">
+                          No
+                        </td>   
                         <td class="text-right">
                           <button class="btn btn-primary btn-round" onclick="window.location.href='part-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>                        
+                          <button class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">View</button>
                         </td>
-                      </tr>   
+                      </tr>
                     </tbody>
                   </table>
                 </div>
