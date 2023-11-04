@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var today = new Date().toISOString().split('T')[0];
   
   // assign today value
-  document.getElementById("datepicker").value = today;
+  document.getElementById("datepicker").value = today;  
 });
 
 //function to input text and filter the info through dropdownlists
@@ -103,16 +103,18 @@ document.addEventListener("DOMContentLoaded", function() {
               option.textContent = item;
               option.addEventListener("click", function() {
                   inputElement.value = item;
-                  dropdownOptions.innerHTML = ""; // Ocultar el dropdown después de seleccionar
+                  dropdownOptions.innerHTML = ""; // Ocultar el dropdown después de seleccionar                  
               });
 
               // Agregar evento hover para resaltar las opciones
               option.addEventListener("mouseenter", function() {
-                  option.style.backgroundColor = "#f2f2f2";
+                  option.style.backgroundColor = "#007bff";
+                  option.style.color = "#fff";                  
               });
 
               option.addEventListener("mouseleave", function() {
                   option.style.backgroundColor = "";
+                  option.style.color = "#000";
               });
 
               dropdownOptions.appendChild(option);

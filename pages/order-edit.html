@@ -16,6 +16,7 @@
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -46,7 +47,7 @@
               <p><strong>Equipment</strong></p>
             </a>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
@@ -65,7 +66,7 @@
                 <a class="dropdown-item" href="">Technician</a>
             </div>
         </li>
-        <li>
+        <li class="active">
           <a href="./orders.html">
             <i class="bi bi-clipboard-check"></i>
             <p><strong>Orders</strong></p>
@@ -147,40 +148,66 @@
           <div class="col-md-8">
             <div class="card card-user">
               <div class="card-header">
-                <h5 class="card-title">Create Part</h5>
+                <h5 class="card-title">Edit Order</h5>
               </div>
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <div class="form-group">
-                        <label>Part Number</label>
-                        <input type="text" class="form-control" placeholder="Eg. LM035" required>
+                        <label>Order Number</label>
+                        <input type="text" class="form-control" disabled="" value="ES-2023-0007">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Date</label>
+                        <input type="text" class="form-control" disabled="" value="11/08/2023">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <div class="form-group">
-                        <label>Description</label>
-                        <input type="text" class="form-control" placeholder="Eg. Carburetor Rebuild Kit (Kohler 25 757 11-S)" required>
-                      </div>
-                    </div>                    
-                  </div>
-                  <div class="row">
-                    <div class="col-md-5 pr-1">
-                      <div class="form-group">
-                        <label>Unit Price</label>
-                        <input type="number" class="form-control" placeholder="Eg. 95.99" required>
+                        <label>Customer</label>
+                        <input type="text" class="form-control" id="inputCustomer" placeholder="Eg. John" value="John Doe">                        
+                        <div id="customerDropdownOptions" class="dropdown-options dropdown-option"></div>
                       </div>
                     </div>
-                  </div>                   
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Equipment</label>
+                        <input type="text" class="form-control" id="inputEquipment" placeholder="Eg. Lawnmower H345" value="Lawnmower H345">                        
+                        <div id="equipmentDropdownOptions" class="dropdown-options dropdown-option"></div>
+                      </div>
+                    </div>                      
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label>Description</label>                        
+                        <input type="text" class="form-control" id="inputDescription" placeholder="Eg. Engine Failure: Unable to Start" value="Engine Failure: Unable to Start">                        
+                        <div id="descriptionDropdownOptions" class="dropdown-options dropdown-option"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Warranty?</label>                        
+                        <select id="Warranty" name="warranty" class="form-control" required>
+                          <option selected disabled value="">Select an option</option>
+                          <option value="1" selected>Yes</option>
+                          <option value="2">No</option>                          
+                        </select>
+                      </div>
+                    </div>                 
+                  </div>
+                                    
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">Create Part</button>
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">Update</button>
                       <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='parts.html'">Cancel</button>
+                        onclick="window.location.href='orders.html'">Cancel</button>
                     </div>
                   </div>
                 </form>
@@ -223,6 +250,8 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Search Bar-->
+  <script src="../assets/js/search-bar.js"></script>
 </body>
 
 </html>

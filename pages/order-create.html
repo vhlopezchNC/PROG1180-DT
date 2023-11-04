@@ -16,6 +16,7 @@
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -170,14 +171,14 @@
                       <div class="form-group">
                         <label>Customer</label>
                         <input type="text" class="form-control" id="inputCustomer" placeholder="Eg. John">                        
-                        <div id="customerDropdownOptions" class="dropdown-options"></div>
+                        <div id="customerDropdownOptions" class="dropdown-options dropdown-option"></div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Equipment</label>
                         <input type="text" class="form-control" id="inputEquipment" placeholder="Eg. Lawnmower H345">                        
-                        <div id="equipmentDropdownOptions" class="dropdown-options"></div>
+                        <div id="equipmentDropdownOptions" class="dropdown-options dropdown-option"></div>
                       </div>
                     </div>                      
                   </div>
@@ -186,7 +187,7 @@
                       <div class="form-group">
                         <label>Description</label>                        
                         <input type="text" class="form-control" id="inputDescription" placeholder="Eg. Engine Failure: Unable to Start">                        
-                        <div id="descriptionDropdownOptions" class="dropdown-options"></div>
+                        <div id="descriptionDropdownOptions" class="dropdown-options dropdown-option"></div>
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -204,9 +205,8 @@
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="submit" class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">Create Order</button>
-                      <button type="submit" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='orders.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">Create Order</button>
+                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='orders.html'">Cancel</button>
                     </div>
                   </div>
                 </form>
