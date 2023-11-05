@@ -141,6 +141,10 @@
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title"> Manufacturer List</h4>
+                <select name="filters" id="filters">
+                  <option value="" disabled selected>Select a filter for search</option>
+                  <option value="Manufacturer Name">Manufacturer Name</option>
+                </select>
                 <div class="pr-3 d-flex align-items-center">
                   <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Manufacturer..." title="Type in a manufacturer">
                   <span class="text-primary">
@@ -292,6 +296,8 @@
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Search Bar-->
   <script src="../assets/js/search-bar.js"></script>
+  <!--Filtering -->
+  <script src="../assets/js/filtering.js"></script>
 </body>
 
 </html>
