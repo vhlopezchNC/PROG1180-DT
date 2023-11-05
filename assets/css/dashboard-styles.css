@@ -24,3 +24,15 @@
     padding: 10px;
     cursor: pointer;
 }
+
+.icon-img-bar {
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+li a:hover .icon-img-bar{
+    transform: scale(1.35);
+
+}
