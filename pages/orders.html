@@ -150,8 +150,16 @@
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Order List</h4>
+                <select name="filters" id="filters">
+                  <option value="" disabled selected>Select a filter for search</option>
+                  <option value="Order Number">Order Number</option>
+                  <option value="Order Date">Order Date</option>
+                  <option value="Customer">Customer</option>
+                  <option value="Equipment">Equipment</option>
+                  <option value="Warranty">Warranty</option>
+                </select>
                 <div class="pr-3 d-flex align-items-center">
-                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Part..." title="Type in a part">
+                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Order..." title="Type in a part">
                   <span class="text-primary">
                     <i class="bi bi-search ml-2 pr-2 h4"></i>
                   </span>
@@ -384,6 +392,8 @@
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Search Bar-->
   <script src="../assets/js/search-bar.js"></script>
+  <!--Filtering -->
+  <script src="../assets/js/filtering.js"></script>
 </body>
 
 </html>
