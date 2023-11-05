@@ -16,6 +16,7 @@
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -24,7 +25,7 @@
       <div class="logo">
         <div class="logo-image-big">
           <a href="dashboard.html"> <img src="../assets/img/Logo2.svg" alt="logo"> </a>
-        </div> 
+        </div>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -46,7 +47,7 @@
               <p><strong>Equipment</strong></p>
             </a>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
@@ -60,8 +61,17 @@
                 <a class="dropdown-item" href="./category.html">Category</a>
                 <a class="dropdown-item" href="./colour.html">Colour</a>
                 <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
+                <a class="dropdown-item" href="./parts.html">Part</a>
+                <a class="dropdown-item" href="">Repair Description</a>
+                <a class="dropdown-item" href="">Technician</a>
             </div>
         </li>
+        <li class="active">
+          <a href="./orders.html">
+            <i class="bi bi-clipboard-check"></i>
+            <p><strong>Orders</strong></p>
+          </a>
+        </li> 
         </ul>
       </div>
     </div>
@@ -79,7 +89,8 @@
             </div>
 
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -105,7 +116,8 @@
                 </a>
               </li>
               <li class="nav-item btn-rotate dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="nc-icon nc-bell-55"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Some Actions</span>
@@ -131,36 +143,64 @@
       </nav> -->
       <!-- End Navbar -->
 
-
-
-      <div class="content">
-        <div class="row">          
-
-
-
+      <div class="content" id="form">
+        <div class="row">
           <div class="col-md-8">
             <div class="card card-user">
               <div class="card-header">
-                <h5 class="card-title">View Colour</h5>
+                <h5 class="card-title">Order Details</h5>
               </div>
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <div class="form-group">
-                        <label>Colour</label>
-                        <input type="text" class="form-control" placeholder="Colour" value="Red" disabled>
-                      </div>  
-                      <!-- <td class="text-center"> -->
-                        <input type="color" id="red" name="red" value="#FF0000" disabled>
-                      <!-- </td>                      -->
+                        <label>Order Number</label>
+                        <input type="text" class="form-control" disabled="" value="ES-2023-0007">
+                      </div>
                     </div>
-                  </div>                    
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Date</label>
+                        <input type="text" class="form-control" disabled="" value="11/08/2023">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Customer</label>
+                        <input type="text" class="form-control" disabled="" value="John Doe">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Equipment</label>
+                        <input type="text" class="form-control" disabled="" value="Lawnmower H345">
+                      </div>
+                    </div>                      
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label>Description</label>                        
+                        <input type="text" class="form-control" disabled="" value="Engine Failure: Unable to Start">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Warranty?</label>                        
+                        <input type="text" class="form-control" disabled="" value="Yes">                         
+                        </select>
+                      </div>
+                    </div>                 
+                  </div>
+                                    
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit Colour</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='colour.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
+                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='orders.html'">Cancel</button>
                     </div>
                   </div>
                 </form>
@@ -169,6 +209,7 @@
           </div>
         </div>
       </div>
+
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
@@ -180,16 +221,19 @@
             </nav>
             <div class="credits ml-auto">
               <span class="copyright">
-                © <script>
+                ©
+                <script>
                   document.write(new Date().getFullYear())
                 </script>, made by Web Genius
               </span>
             </div>
           </div>
         </div>
+
       </footer>
     </div>
   </div>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -199,6 +243,8 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Search Bar-->
+  <script src="../assets/js/search-bar.js"></script>
 </body>
 
 </html>

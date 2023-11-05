@@ -24,35 +24,31 @@
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <div class="logo-image-big">
-          <a href="dashboard.html"> <img src="../assets/img/Logo2.svg" alt="logo"> </a>
+          <a href="dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
         </div> 
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.html">
-              <i class="bi bi-pie-chart"></i>
-              <p><strong>Dashboard</strong></p>
+            <a href="./dashboard.html">              
+              <p><strong><img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon"/>Dashboard</strong></p>
             </a>
           </li>
           <li>
-            <a href="./customers.html">
-              <i class="bi bi-people"></i>
-              <p><strong>Customers</strong></p>
+            <a href="./customers.html">              
+              <p><strong><img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon"/>Customers</strong></p>
             </a>
           </li>
           <li>
-            <a href="./equipments.html">
-              <i class="bi bi-motherboard"></i>
-              <p><strong>Equipment</strong></p>
+            <a href="./equipments.html">              
+              <p><strong><img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon"/>Equipment</strong></p>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <i id="dropdownIcon" class="bi bi-person-gear"></i>
-                        <strong>Management</strong>
+                    <div>                        
+                        <strong><img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon"/>Management</strong>
                     </div>
                     <i class="bi bi-caret-down-fill"></i>
                 </div>
@@ -62,22 +58,26 @@
                 <a class="dropdown-item" href="./colour.html">Colour</a>
                 <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
                 <a class="dropdown-item" href="./parts.html">Part</a>
-                <a class="dropdown-item" href="">Repair Description</a>
+                <a class="dropdown-item" href="./repair-description.html">Repair Description</a>
                 <a class="dropdown-item" href="">Technician</a>
             </div>
         </li>
         <li>
           <a href="./orders.html">
-            <i class="bi bi-clipboard-check"></i>
-            <p><strong>Orders</strong></p>
+            <p><strong><img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon"/>Repair Orders</strong></p>
           </a>
-        </li>          
+        </li>      
+        <li>
+          <a href="">            
+            <p><strong><img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon"/>Work log</strong></p>
+          </a>
+        </li>     
         </ul>
       </div>
     </div>
     <div class="main-panel">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+      <!-- <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -138,7 +138,7 @@
             </ul>
           </div>
         </div>
-      </nav>      
+      </nav>       -->
       <div class="content">  
           <div class="container my-4">
             <div class="row text-center">
@@ -201,11 +201,10 @@
               </div>
               <div class="col-md-6 mb-4 d-flex justify-content-center align-items-center icon-hover">
                 <figure class="figure">  
-                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 492.308 492.308" width="150" height="150" stroke="#B1B1B1" stroke-width="5.592" class="svg figure-img img-fluid rounded-circle border-dashboard-icons" fill="#B1B1B1">
-                    <path d="M358.188 85.644V46.269h-56.74C296.779 20.01 273.784 0 246.197 0c-27.582 0-50.577 20.01-55.245 46.269h-56.745v39.375H43.63v406.663h405.048V85.644h-90.49zm-204.289 0V65.962h55.88v-9.846c0-20.087 16.337-36.423 36.418-36.423S282.62 36.03 282.62 56.116v9.846h55.875v60.423H153.899V85.644zm275.087 386.971H63.322V105.337h70.885v40.74h223.981v-40.74h70.798v367.278z"/>
-                    <path d="m167.394 190.183-41.12 41.125-17.082-17.087-13.923 13.923 31.005 31.01 55.043-55.048zM208.443 222.73h181.602v19.692H208.443zM167.394 277.663l-41.12 41.125-17.082-17.076-13.923 13.923 31.005 31 55.043-55.048zM208.443 310.223h181.602v19.692H208.443zM167.394 365.144l-41.12 41.125-17.082-17.077-13.923 13.923 31.005 31 55.043-55.048zM208.443 397.686h181.602v19.692H208.443z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="150" height="150" viewBox="0 0 329.209 329.209" class="svg figure-img img-fluid rounded-circle border-dashboard-icons" fill="#B1B1B1">
+                    <path d="M64.99 131.391c1.247 1.103 2.971 1.501 4.627 1.165 1.638-.325 3.063-1.459 3.806-2.966.278-.565 3.315-5.874 13.438-4.945 13.008 1.182 21.486 7.042 21.57 7.095.937.661 2.024.99 3.107.99a5.397 5.397 0 0 0 3.636-1.413l32.252-29.564a5.389 5.389 0 0 0 1.176-6.371l-13.521-27.034c14.063-23.806 42.312-25.709 50.853-25.709 1.122 0 1.784.037 2.246.053l6.719-.053a5.375 5.375 0 0 0 4.976-3.452 5.36 5.36 0 0 0-1.39-5.892c-14.122-12.926-31.69-19.481-52.237-19.481-40.966 0-83.381 27.113-91.982 45.397-10.177 21.626-22.998 34.644-23.132 34.778a5.398 5.398 0 0 0-1.565 3.968 5.389 5.389 0 0 0 1.825 3.864l33.596 29.57zM38.17 166.357a5.393 5.393 0 0 0 3.956 1.259 5.345 5.345 0 0 0 3.677-1.938l18.814-22.845a5.368 5.368 0 0 0-.586-7.443l-34.94-30.909c-1.065-.948-2.446-1.399-3.892-1.339a5.374 5.374 0 0 0-3.699 1.811L1.343 127.801a5.333 5.333 0 0 0-1.329 3.935 5.371 5.371 0 0 0 1.877 3.708l36.279 30.913zM327.973 264.453a5.403 5.403 0 0 0-1.213-1.753l-91.865-88.127-37.406-36.505 77.066-71.24 3.852 3.854a5.378 5.378 0 0 0 3.802 1.575c.072 0 .152 0 .226-.005a5.376 5.376 0 0 0 3.88-1.903l28.42-33.643a5.388 5.388 0 0 0-.73-7.657l-10.525-8.488a5.39 5.39 0 0 0-6.735-.016l-33.35 26.677a5.388 5.388 0 0 0-2.005 3.904 5.362 5.362 0 0 0 1.564 4.102l3.995 3.994-77.167 71.332-28.46-27.775a5.382 5.382 0 0 0-7.283-.205l-36.956 32.253a5.382 5.382 0 0 0-1.84 3.777 5.364 5.364 0 0 0 1.445 3.947l27.883 29.8-3.525 3.261-13.58-13.744c-1.971-2.005-5.187-2.128-7.32-.299L2.703 262.5a5.498 5.498 0 0 0-1.433 1.953c-3.926 9.098 1.703 23.469 14.003 35.765 9.352 9.359 20.553 15.177 29.231 15.177 2.981 0 5.633-.662 7.879-1.96.405-.229.78-.52 1.108-.85l108.375-108.289a5.378 5.378 0 0 0 .021-7.581l-13.294-13.449 3.312-3.061 123.715 132.26c.363.377.782.713 1.233.977 2.247 1.301 4.898 1.953 7.88 1.953 8.673 0 19.874-5.817 29.233-15.172 12.301-12.301 17.933-26.672 14.007-35.77zm-309.161 9.381c-.753 0-1.499-.32-2.031-.93a2.68 2.68 0 0 1 .275-3.789l98.642-85.451a2.687 2.687 0 0 1 3.79.274 2.681 2.681 0 0 1-.273 3.789l-98.644 85.449a2.672 2.672 0 0 1-1.759.658zm14.112 14.111a2.689 2.689 0 0 1-1.869-4.615l93.064-90.604a2.69 2.69 0 0 1 3.798.052 2.69 2.69 0 0 1-.052 3.8L34.8 287.182a2.67 2.67 0 0 1-1.876.763zm108.067-82.668-92.054 92.625a2.651 2.651 0 0 1-1.903.792c-.688 0-1.37-.263-1.898-.782a2.695 2.695 0 0 1-.01-3.8l92.054-92.626a2.688 2.688 0 1 1 3.811 3.791z"/></svg>
                   <figcaption>
-                      <a href="" class="btn btn-primary">Repair List</a>
+                      <a href="" class="btn btn-primary">Work Log</a>
                     </figcaption>
                 </figure>    
               </div>              
