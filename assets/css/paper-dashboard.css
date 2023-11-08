@@ -1,4 +1,3 @@
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -1729,6 +1728,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
   color: #9A9A9A; }
 
+
+
 .navbar {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -3050,7 +3051,8 @@ License - nucleoapp.com/license/
     .off-canvas-sidebar .nav li > a {
       margin: 10px 15px 0;
       color: #FFFFFF;
-      display: block;
+      display: flex;
+      align-items: center;
       text-decoration: none;
       position: relative;
       text-transform: uppercase;
