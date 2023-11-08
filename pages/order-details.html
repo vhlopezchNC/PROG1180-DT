@@ -30,20 +30,20 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html" >
-              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon"/>
+            <a href="./dashboard.html">
+              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon" />
               <p><strong>Dashboard</strong></p>
             </a>
           </li>
           <li>
             <a href="./customers.html">
-              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon"/>
+              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon" />
               <p><strong>Customers</strong></p>
             </a>
           </li>
           <li>
             <a href="./equipments.html">
-              <img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon"/>
+              <img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon" />
               <p><strong>Equipment</strong></p>
             </a>
           </li>
@@ -63,8 +63,8 @@
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
-                  <strong>Management</strong>
+                <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
+                <strong>Management</strong>
                 <i class="bi bi-caret-down-fill"></i>
               </div>
             </a>
@@ -81,15 +81,15 @@
       </div>
     </div>
     <div class="main-panel">
-    <!--Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-      <div class="container-fluid">
-        <div class="navbar-wrapper">
-          <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
+      </nav>
+      <!-- End Navbar -->
       <div class="content" id="form">
         <div class="row">
           <div class="col-md-8">
@@ -97,6 +97,11 @@
               <div class="card-header">
                 <h5 class="card-title">Order Details</h5>
               </div>
+              <div class="update ml-auto pr-3">
+                <button class="btn btn-primary btn-round"
+                  onclick="window.location.href='customer-equipment-repair-details.html'">View Customer</button>
+              </div>
+
               <div class="card-body">
                 <form>
                   <div class="row">
@@ -125,29 +130,31 @@
                         <label>Equipment</label>
                         <input type="text" class="form-control" disabled="" value="Lawnmower H345">
                       </div>
-                    </div>                      
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-md-8">
                       <div class="form-group">
-                        <label>Description</label>                        
+                        <label>Description</label>
                         <input type="text" class="form-control" disabled="" value="Engine Failure: Unable to Start">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Warranty?</label>                        
-                        <input type="text" class="form-control" disabled="" value="Yes">                         
+                        <label>Warranty?</label>
+                        <input type="text" class="form-control" disabled="" value="Yes">
                         </select>
                       </div>
-                    </div>                 
+                    </div>
                   </div>
-                                    
-                  
+
+
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='orders.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary btn-round"
+                        onclick="window.location.href='order-edit.html'">Edit</button>
+                      <button type="button" class="btn btn-secondary btn-round"
+                        onclick="window.location.href='orders.html'">Cancel</button>
                     </div>
                   </div>
                 </form>
