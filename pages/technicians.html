@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/OnlyLogo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        ESE System
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+    <link href="../assets/css/pagination.css" rel="stylesheet">
+    <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="white" data-active-color="danger">
+          <div class="logo">
+            <div class="logo-image-big">
+              <a href="dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
+            </div>
+          </div>
+          <div class="sidebar-wrapper">
+            <ul class="nav">
+              <li>
+                <a href="./dashboard.html" >
+                  <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon"/>
+                  <p><strong>Dashboard</strong></p>
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html">
+                  <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon"/>
+                  <p><strong>Customers</strong></p>
+                </a>
+              </li>
+              <li>
+                <a href="./equipments.html">
+                  <img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon"/>
+                  <p><strong>Equipment</strong></p>
+                </a>
+              </li>
+              <li>
+                <a href="./orders.html">
+                  <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon" />
+                  <p><strong>Repair Orders</strong></p>
+                </a>
+              </li>
+              <!--<li>
+                <a href="">
+                  <p><strong><img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon" />Work
+                      log</strong></p>
+                </a>
+              </li>-->
+              <li class="nav-item dropdown active">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
+                      <strong>Management</strong>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./category.html">Category</a>
+                  <a class="dropdown-item" href="./colour.html">Colour</a>
+                  <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
+                  <a class="dropdown-item" href="./parts.html">Part</a>
+                  <a class="dropdown-item" href="./repair-description.html">Repair Description</a>
+                  <a class="dropdown-item" href="./technicians.html">Technician</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-panel">
+        <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+            <div class="content">
+                <div class="row pr-3 mb-4">
+                    <button type="submit" class="btn btn-primary btn-round ml-auto"
+                        onclick="window.location.href='technician-create.html'">Create Technician</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Technician List</h4>
+                                <select name="filters" id="filters">
+                                    <option value="" disabled selected>Select a filter for search</option>
+                                    <option value="Last Name">Last Name</option>
+                                    <option value="First Name">First Name</option>
+
+                                </select>
+                                <div class="pr-3 d-flex align-items-center">
+                                    <input type="text" id="userInput" onkeyup="myFunction()"
+                                        class="form-control border border-primary" placeholder="Search Technician..."
+                                        title="Type in a technician's name">
+                                    <span class="text-primary">
+                                        <i class="bi bi-search ml-2 pr-2 h4"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table">
+                                    <table class="table" id="table">
+                                        <thead class=" text-primary">
+                                            <tr>
+                                                <th>
+                                                    Last Name
+                                                </th>
+                                                <th>
+                                                    First Name
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Jones
+                                                </td>
+                                                <td>
+                                                    Steve
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Lambada
+                                                </td>
+                                                <td>
+                                                    Beth
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Sparks
+                                                </td>
+                                                <td>
+                                                    Victor
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Brewster
+                                                </td>
+                                                <td>
+                                                    Punky
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Porter
+                                                </td>
+                                                <td>
+                                                    Luke
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Moonstir
+                                                </td>
+                                                <td>
+                                                    Natalie
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Jett
+                                                </td>
+                                                <td>
+                                                    Isabelle
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
+                                                    <button class="btn btn-primary btn-round"
+                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                    <div class="center">
+                                        <div class="pagination">
+                                            <a href="#">&laquo;</a>
+                                            <a class="active" href="#">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">&raquo;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#" target="_blank">Blog</a></li>
+                        <li><a href="#" target="_blank">Licenses</a></li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, made by Web Genius
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Search Bar-->
+    <script src="../assets/js/search-bar.js"></script>
+    <!--Filtering -->
+    <script src="../assets/js/filtering.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
-  <link href="../assets/css/pagination.css" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -24,319 +24,294 @@
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <div class="logo-image-big">
-          <a href="dashboard.html"> <img src="../assets/img/Logo2.svg" alt="logo"> </a>
-        </div> 
+          <a href="dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
+        </div>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html">
-              <i class="bi bi-pie-chart"></i>
+            <a href="./dashboard.html" >
+              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon"/>
               <p><strong>Dashboard</strong></p>
             </a>
           </li>
-          <li class="active ">
+          <li class="active">
             <a href="./customers.html">
-              <i class="bi bi-people"></i>
+              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon"/>
               <p><strong>Customers</strong></p>
             </a>
           </li>
           <li>
             <a href="./equipments.html">
-              <i class="bi bi-motherboard"></i>
+              <img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon"/>
               <p><strong>Equipment</strong></p>
             </a>
           </li>
+          <li>
+            <a href="./orders.html">
+              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon" />
+              <p><strong>Repair Orders</strong></p>
+            </a>
+          </li>
+          <!--<li>
+            <a href="">
+              <p><strong><img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon" />Work
+                  log</strong></p>
+            </a>
+          </li>-->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <i id="dropdownIcon" class="bi bi-person-gear"></i>
-                        <strong>Management</strong>
-                    </div>
-                    <i class="bi bi-caret-down-fill"></i>
-                </div>
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
+                  <strong>Management</strong>
+                <i class="bi bi-caret-down-fill"></i>
+              </div>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./category.html">Category</a>
-                <a class="dropdown-item" href="./colour.html">Colour</a>
-                <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
+              <a class="dropdown-item" href="./category.html">Category</a>
+              <a class="dropdown-item" href="./colour.html">Colour</a>
+              <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
+              <a class="dropdown-item" href="./parts.html">Part</a>
+              <a class="dropdown-item" href="./repair-description.html">Repair Description</a>
+              <a class="dropdown-item" href="./technicians.html">Technician</a>
             </div>
-        </li>
+          </li>
         </ul>
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
-      <!-- <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <div class="navbar-toggle">
-              <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </button>
-            </div>
-
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <form>
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <i class="nc-icon nc-zoom-split"></i>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link btn-magnify" href="javascript:;">
-                  <i class="nc-icon nc-layout-11"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Stats</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item btn-rotate dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="nc-icon nc-bell-55"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Some Actions</span>
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-rotate" href="javascript:;">
-                  <i class="nc-icon nc-settings-gear-65"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Account</span>
-                  </p>
-                </a>
-              </li>
-            </ul>
+            <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
           </div>
         </div>
-      </nav> -->
+      </nav>
       <!-- End Navbar -->
       <div class="content">
-          <!-- Customer List -->
-          <div class="row pr-3 mb-4">
-            <button type="submit" class="btn btn-primary btn-round ml-auto" onclick="window.location.href='customers-create.html'">Add Customer</button>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title"> Customer List</h4>
-                  <select name="filters" id="filters">
-                    <option value="" disabled selected>Select a filter for search</option>
-                    <option value="Customer First Name">Customer First Name</option>
-                    <option value="Customer Last Name">Customer Last Name</option>
-                    <option value="Customer Email">Customer Email</option>
-                    <option value="Customer Phone Number">Customer Phone Number</option>
-                  </select>
-                  <div class="pr-3 d-flex align-items-center">
-                    <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Customer..." title="Type in a customer">
-                    <span class="text-primary">
-                      <i class="bi bi-search ml-2 pr-2 h4"></i>
-                    </span>
-                  </div>  
+        <!-- Customer List -->
+        <div class="row pr-3 mb-4">
+          <button type="submit" class="btn btn-primary btn-round ml-auto"
+            onclick="window.location.href='customers-create.html'">Create Customer</button>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Customer List</h4>
+                <select name="filters" id="filters">
+                  <option value="" disabled selected>Select a filter for search</option>
+                  <option value="Customer First Name">Customer First Name</option>
+                  <option value="Customer Last Name">Customer Last Name</option>
+                  <option value="Customer Email">Customer Email</option>
+                  <option value="Customer Phone Number">Customer Phone Number</option>
+                </select>
+                <div class="pr-3 d-flex align-items-center">
+                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary"
+                    placeholder="Search Customer..." title="Type in a customer">
+                  <span class="text-primary">
+                    <i class="bi bi-search ml-2 pr-2 h4"></i>
+                  </span>
                 </div>
-                <div class="card-body">
-                  <div class="table">
-                    <table class="table" id="table">
-                      <thead class=" text-primary">
-                        <tr>
-                          <th>
-                            First Name
-                          </th>
-                          <th>
-                            Last Name
-                          </th>
-                          <th>
-                            Email
-                          </th>
-                          <th>
-                            Phone #
-                          </th>
-                          <th>
-                          
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            John
-                          </td>
-                          <td>
-                            Doe
-                          </td>
-                          <td>
-                            jd@xyz.com
-                          </td>
-                          <td>
-                            (905) 123-4567
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customer-equipment-edit.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customer-equipment-detail.html'">View</button>
-                           
-                          </td>
-                        </tr>
+              </div>
+              <div class="card-body">
+                <div class="table">
+                  <table class="table" id="table">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          First Name
+                        </th>
+                        <th>
+                          Last Name
+                        </th>
+                        <th>
+                          Email
+                        </th>
+                        <th>
+                          Phone #
+                        </th>
+                        <th>
 
-                        <tr>
-                          <td>
-                            Jordan
-                          </td>
-                          <td>
-                            Dunn
-                          </td>
-                          <td>
-                            jd1@xyz.com
-                          </td>
-                          <td>
-                            (905) 836-1254
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            
-                          </td>
-                        </tr>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          John
+                        </td>
+                        <td>
+                          Doe
+                        </td>
+                        <td>
+                          jd@xyz.com
+                        </td>
+                        <td>
+                          (905) 123-4567
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
 
-                        <tr>
-                          <td>
-                            Jeremy
-                          </td>
-                          <td>
-                            Dean
-                          </td>
-                          <td>
-                            jd2@xyz.com
-                          </td>
-                          <td>
-                            (905) 927-8184
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                           
-                          </td>
-                        </tr>
+                        </td>
+                      </tr>
 
-                        <tr>
-                          <td>
-                            Jane
-                          </td>
-                          <td>
-                            Day
-                          </td>
-                          <td>
-                            jd3@xyz.com
-                          </td>
-                          <td>
-                            (905) 836-1923
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                            
-                          </td>
-                        </tr>
+                      <tr>
+                        <td>
+                          Jordan
+                        </td>
+                        <td>
+                          Dunn
+                        </td>
+                        <td>
+                          jd1@xyz.com
+                        </td>
+                        <td>
+                          (905) 836-1254
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
 
-                        <tr>
-                          <td>
-                            Jill
-                          </td>
-                          <td>
-                            Davis
-                          </td>
-                          <td>
-                            jd4@xyz.com
-                          </td>
-                          <td>
-                            (905) 932-1541
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                           
-                          </td>
-                        </tr>
+                        </td>
+                      </tr>
 
-                        <tr>
-                          <td>
-                            Jack
-                          </td>
-                          <td>
-                            Duncan
-                          </td>
-                          <td>
-                            jd5@xyz.com
-                          </td>
-                          <td>
-                            (905) 093-4512
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                           
-                          </td>
-                        </tr>
+                      <tr>
+                        <td>
+                          Jeremy
+                        </td>
+                        <td>
+                          Dean
+                        </td>
+                        <td>
+                          jd2@xyz.com
+                        </td>
+                        <td>
+                          (905) 927-8184
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
 
-                        <tr>
-                          <td>
-                            Joseph
-                          </td>
-                          <td>
-                            Daniels
-                          </td>
-                          <td>
-                            jd6@xyz.com
-                          </td>
-                          <td>
-                            (905) 358-1492
-                          </td>
-                          <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='customers-view.html'">View</button>
-                           
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="center">
-                      <div class="pagination">
-                        <a href="#">&laquo;</a>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">&raquo;</a>
-                      </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Jane
+                        </td>
+                        <td>
+                          Day
+                        </td>
+                        <td>
+                          jd3@xyz.com
+                        </td>
+                        <td>
+                          (905) 836-1923
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Jill
+                        </td>
+                        <td>
+                          Davis
+                        </td>
+                        <td>
+                          jd4@xyz.com
+                        </td>
+                        <td>
+                          (905) 932-1541
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Jack
+                        </td>
+                        <td>
+                          Duncan
+                        </td>
+                        <td>
+                          jd5@xyz.com
+                        </td>
+                        <td>
+                          (905) 093-4512
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Joseph
+                        </td>
+                        <td>
+                          Daniels
+                        </td>
+                        <td>
+                          jd6@xyz.com
+                        </td>
+                        <td>
+                          (905) 358-1492
+                        </td>
+                        <td class="text-right">
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='customer-equipment-repair-details.html'">View</button>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="center">
+                    <div class="pagination">
+                      <a href="#">&laquo;</a>
+                      <a class="active" href="#">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">&raquo;</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-    
           </div>
+
+        </div>
       </div>
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
@@ -349,7 +324,8 @@
             </nav>
             <div class="credits ml-auto">
               <span class="copyright">
-                © <script>
+                ©
+                <script>
                   document.write(new Date().getFullYear())
                 </script>, made by Web Genius
               </span>

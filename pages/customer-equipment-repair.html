@@ -96,104 +96,72 @@
                     <div class="col-md-8">
                         <div class="card card-user">
                             <div class="card-header">
-                                <h5 class="card-title">Add Equipment</h5>
+                                <h5 class="card-title">Create Repair Order</h5>
                             </div>
                             <div class="card-body">
                                 <form>
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Description</label>
-                                                <input type="text" class="form-control" placeholder="Description"
-                                                    required>
+                                                <label>Order Number</label>
+                                                <input type="text" class="form-control" disabled=""
+                                                    value="ES-2023-0007">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Date (YYYY-MM-DD)</label>
+                                                <input type="date" class="form-control" id="datepicker" readonly>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="row">
-                                        <div class="col-md-5 pr-1">
+                                        <div class="col-md-8">
                                             <div class="form-group">
-                                                <label>Model Number</label>
-                                                <input type="text" class="form-control" placeholder="Model Number"
+                                                <label>Repair Description</label>
+                                                <select id="description" name="description" class="form-control"
                                                     required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 pl-1">
-                                            <div class="form-group">
-                                                <label>Manufacturer</label>
-                                                <select id="manufacturer" name="manufacturer" class="form-control"
-                                                    required>
-                                                    <option selected disabled value="">Select a Manufacturer</option>
-                                                    <option value="1">Craftsman</option>
-                                                    <option value="2">Honda</option>
-                                                    <option value="3">Husqvarna</option>
-                                                    <option value="4">John Deere</option>
-                                                    <option value="5">Kubota</option>
-                                                    <option value="6">Toro</option>
-                                                    <option value="7">STIHL</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4 pr-1">
-                                            <div class="form-group">
-                                                <label>Category</label>
-                                                <select id="category" name="category" class="form-control" required>
-                                                    <option selected disabled value="">Select a Category</option>
-                                                    <option value="1">Garden Tools</option>
-                                                    <option value="2">Lawn Care Accessories</option>
-                                                    <option value="3">Lawnmowers</option>
-                                                    <option value="4">Landscaping Equipment</option>
-                                                    <option value="5">Outdoor Power Equipment</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 px-1">
-                                            <div class="form-group">
-                                                <label>Color</label>
-                                                <select id="color" name="color" class="form-control" required>
-                                                    <option selected disabled value="">Select a Color</option>
-                                                    <option value="1">Blue</option>
-                                                    <option value="2">Green</option>
-                                                    <option value="3">Black</option>
-                                                    <option value="4">Red</option>
-                                                    <option value="5">White</option>
+                                                    <option selected disabled value="">Select a repair description
+                                                    </option>
+                                                    <option value="1">Wheel or Tire Repair: Fix flat tires or replace
+                                                        damaged wheels for easy maneuverability.</option>
+                                                    <option value="2">Pull Cord Replacement: Replace a frayed or broken
+                                                        pull cord to start the mower easily.</option>
+                                                    <option value="3">Fuel System Cleaning: Clean the carburetor and
+                                                        fuel lines to address starting or running issues.</option>
+                                                    <option value="4">Air Filter Cleaning/Replacement: Clean or replace
+                                                        the air filter to ensure proper airflow and prevent engine
+                                                        damage.</option>
+                                                    <option value="5">Belt Replacement: Replace a worn or damaged drive
+                                                        or deck belt for proper mower operation.</option>
+
                                                 </select>
                                             </div>
                                         </div>
 
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Warranty?</label>
+                                                <select id="Warranty" name="warranty" class="form-control" required>
+                                                    <option selected disabled value="">Select an option</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!--
-                  <div class="row">
-                    <div class="col-md-4 pr-1">
-                      <div class="form-group">
-                        <label>Quantity</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label>Cost</label>
-                        <input type="number" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Equipment Notes</label>
-                        <textarea class="form-control textarea"> </textarea>
-                      </div>
-                    </div>
-                  </div>-->
+
+
                                     <div class="row">
                                         <div class="update ml-auto pr-3">
-                                            <button type="submit" class="btn btn-primary btn-round"
-                                                onclick="window.location.href='customer-equipment-repair.html'">Add
-                                                Equipment and create repair order</button>
-                                            <button type="submit" class="btn btn-secondary btn-round"
-                                                onclick="window.location.href='customers-create.html'">Back</button>
+                                            <button type="button" class="btn btn-primary btn-round"
+                                                onclick="window.location.href='customer-equipment-repair-details.html'">Create
+                                                Order</button>
+                                            <button type="button" class="btn btn-secondary btn-round"
+                                                onclick="window.location.href='customer-equipment.html'">Back</button>
                                         </div>
                                     </div>
                                 </form>
@@ -202,6 +170,7 @@
                     </div>
                 </div>
             </div>
+
 
             <footer class="footer footer-black  footer-white ">
                 <div class="container-fluid">
@@ -228,6 +197,11 @@
     </div>
 
     <!--   Core JS Files   -->
+
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('datepicker').value = today;
+    </script>
     <script src="../assets/js/core/jquery.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>

@@ -81,14 +81,14 @@
           </div>
         </div>
         <div class="main-panel">
-            <!--Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
-          </div>
-        </div>
-      </nav>
+        <!--Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand">EMMA'S SMALL ENGINE</a>
+                </div>
+            </div>
+        </nav>
       <!-- End Navbar -->
             <div class="content">
                 <div class="row">
@@ -168,20 +168,27 @@
                                     </div>
 
                                 </form>
+                                <div class="row">
+                                    <div class="update ml-auto pr-3">
+                                        <button class="btn btn-primary btn-round"
+                                            onclick="window.location.href='./customer-equipment-repair-details.html'">Edit
+                                            Customer</button>
+
+                                    </div>
+                                </div>
 
 
                             </div>
                         </div>
-                        <div class="container">
-                            <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card">Equipment Details</button>
-                        </div>
-                        <div id="card" class="collapse">
+
+
+                        <div class="content">
                             <div class="row">
 
                                 <div class="col-md-12">
                                     <div class="card card-user">
                                         <div class="card-header">
-                                            <h5 class="card-title">Equipment Details</h5>
+                                            <h5 class="card-title">Equipment</h5>
                                         </div>
                                         <div class="card-body">
 
@@ -235,25 +242,87 @@
                                             <div class="row">
                                                 <div class="update ml-auto pr-3">
                                                     <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='./customer-equipment-edit.html'">Edit</button>
+                                                        onclick="window.location.href='./customer-equipment-repair-details.html'">Edit
+                                                        Equipment</button>
 
                                                 </div>
                                             </div>
 
-                                            <!-- 
-                <div class="row">
-                  <div class="update ml-auto pr-3">
-                    <button class="btn btn-primary btn-round"
-                      onclick="window.location.href='./customers-update.html'">Edit</button>
-                    <button type="submit" class="btn btn-secondary btn-round"
-                      onclick="window.location.href='customers.html'">Cancel</button>
-                  </div>
-                </div> -->
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <div class="content" id="form">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-user">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Repair Order</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Order Number</label>
+                                                            <input type="text" class="form-control" disabled=""
+                                                                value="ES-2023-0007">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Date (YYYY-MM-DD)</label>
+                                                            <input type="date" class="form-control" id="datepicker"
+                                                                readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <label>Repair Description</label>
+                                                            <input type="text" class="form-control" disabled=""
+                                                                value="Wheel or Tire Repair: Fix flat tires or replace damaged wheels for easy maneuverability.">
+
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Warranty?</label>
+                                                            <input type="text" class="form-control" disabled=""
+                                                                value="No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="update ml-auto pr-3">
+                                                        <button type="button" class="btn btn-primary btn-round"
+                                                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit
+                                                            Order
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -262,38 +331,42 @@
 
 
 
-                        <footer class="footer footer-black  footer-white ">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="#" target="_blank">Blog</a></li>
-                                            <li><a href="#" target="_blank">Licenses</a></li>
-                                        </ul>
-                                    </nav>
-                                    <div class="credits ml-auto">
-                                        <span class="copyright">
-                                            ©
-                                            <script>
-                                                document.write(new Date().getFullYear())
-                                            </script>, made by Web Genius
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
+
+            <footer class="footer footer-black  footer-white ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#" target="_blank">Blog</a></li>
+                                <li><a href="#" target="_blank">Licenses</a></li>
+                            </ul>
+                        </nav>
+                        <div class="credits ml-auto">
+                            <span class="copyright">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>, made by Web Genius
+                            </span>
+                        </div>
                     </div>
                 </div>
-                
-                <!--   Core JS Files   -->
-                <script src="../assets/js/core/jquery.min.js"></script>
-                <script src="../assets/js/core/popper.min.js"></script>
-                <script src="../assets/js/core/bootstrap.min.js"></script>
-                <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-                <!-- Chart JS -->
-                <script src="../assets/js/plugins/chartjs.min.js"></script>
-                <!--  Notifications Plugin    -->
-                <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('datepicker').value = today;
+    </script>
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
 </body>
 
 </html>
