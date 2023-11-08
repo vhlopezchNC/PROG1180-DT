@@ -1802,8 +1802,9 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     left: 0;
     width: initial; }
   .navbar .navbar-wrapper {
-    display: inline-flex;
-    align-items: center; }
+    display: flex; 
+    justify-content: center; 
+    width: 100%;}
     .navbar .navbar-wrapper .navbar-minimize {
       padding-right: 10px; }
       .navbar .navbar-wrapper .navbar-minimize .btn {
@@ -1920,6 +1921,9 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
 .bg-default {
   background-color: #000000 !important; }
+
+.bg-top {
+background-color: #107896 !important; }
 
 .bg-primary {
   background-color: #51cbce !important; }
@@ -3813,7 +3817,9 @@ License - nucleoapp.com/license/
       padding-top: 0; }
     .navbar .navbar-brand {
       font-size: 16px;
-      margin-right: 0; }
+      margin-right: 0;
+      text-align: center; 
+      width: 100%; }
   .profile-photo .profile-photo-small {
     margin-left: -2px; }
   .button-dropdown {
