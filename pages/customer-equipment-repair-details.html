@@ -42,12 +42,6 @@
                 </a>
               </li>
               <li>
-                <a href="./equipments.html">
-                  <img src="../assets/img/equipment.svg" class="icon-img-bar" alt="Equipment icon"/>
-                  <p><strong>Equipment</strong></p>
-                </a>
-              </li>
-              <li>
                 <a href="./orders.html">
                   <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon" />
                   <p><strong>Repair Orders</strong></p>
@@ -180,80 +174,93 @@
 
                             </div>
                         </div>
-
-
-                        <div class="content">
-                            <div class="row">
-
-                                <div class="col-md-12">
-                                    <div class="card card-user">
-                                        <div class="card-header">
-                                            <h5 class="card-title">Equipment</h5>
-                                        </div>
-                                        <div class="card-body">
-
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>Description</label>
-                                                            <input type="text" class="form-control" disabled=""
-                                                                placeholder="Equipment description" value="Lawnmower">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 pr-1">
-                                                        <div class="form-group">
-                                                            <label>Model Number</label>
-                                                            <input type="text" class="form-control" disabled=""
-                                                                placeholder="Model Number" value="L500">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4 px-1">
-                                                        <div class="form-group">
-                                                            <label>Category</label>
-                                                            <input type="text" class="form-control" disabled=""
-                                                                placeholder="Category" value="Eco-Friendly">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 pl-1">
-                                                        <div class="form-group">
-                                                            <label>Color</label>
-                                                            <input type="text" class="form-control" disabled=""
-                                                                placeholder="Color" value="Red">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 pr-1">
-                                                        <div class="form-group">
-                                                            <label>Manufacturer</label>
-                                                            <input type="text" class="form-control" disabled=""
-                                                                placeholder="Company" value="LTech">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </form>
-
-
-                                            <div class="row">
-                                                <div class="update ml-auto pr-3">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='./customer-equipment-repair-details.html'">Edit
-                                                        Equipment</button>
-
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="container">
+                                <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card">Equipment Details</button>
+                            </div>
+                            <div id="card" class="collapse">
+                                      <table class="table" id="table">
+                                        <thead class=" text-primary">
+                                          <tr>
+                                            <th>
+                                              Description
+                                            </th>
+                                            <th class="text-center">
+                                              Model Number
+                                            </th>
+                                            <th class="text-center">
+                                              Manufacturer
+                                            </th>                      
+                                            <th class="text-center">
+                                              Category
+                                            </th>                      
+                                            <th class="text-center">
+                                              
+                                            </th>  
+                                          </tr>
+                                          </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              Lawnmower H345
+                                            </td>
+                                            <td class="text-center">
+                                              R456
+                                            </td>
+                                            <td class="text-center">
+                                              Craftsman
+                                            </td>                        
+                                            <td class="text-center">
+                                              Lawnmowers
+                                            </td>                        
+                                            <td class="text-right">
+                                              <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                                            
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              Lawnmower PP56
+                                            </td>
+                                            <td class="text-center">
+                                              TRS-500
+                                            </td>
+                                            <td class="text-center">
+                                              LTech
+                                            </td>                        
+                                            <td class="text-center">
+                                              Lawnmowers
+                                            </td>                        
+                                            <td class="text-right">
+                                              <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                                            
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              Recycler 22-inch
+                                            </td>
+                                            <td class="text-center">
+                                              HRX217VKA
+                                            </td>
+                                            <td class="text-center">
+                                              STIHL
+                                            </td>                        
+                                            <td class="text-center">
+                                              Lawnmowers
+                                            </td>                        
+                                            <td class="text-right">
+                                              <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                                          
+                                            </td>
+                                          </tr>
+                                          </tr>   
+                                        </tbody>
+                                      </table>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
 
 
