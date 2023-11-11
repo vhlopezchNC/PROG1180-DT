@@ -31,14 +31,14 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html" >
-              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon"/>
+            <a href="./dashboard.html">
+              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon" />
               <p><strong>Dashboard</strong></p>
             </a>
           </li>
           <li>
             <a href="./customers.html">
-              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon"/>
+              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon" />
               <p><strong>Customers</strong></p>
             </a>
           </li>
@@ -58,8 +58,8 @@
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
-                  <strong>Management</strong>
+                <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon" />
+                <strong>Management</strong>
                 <i class="bi bi-caret-down-fill"></i>
               </div>
             </a>
@@ -76,19 +76,19 @@
       </div>
     </div>
     <div class="main-panel">
-    <!--Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-      <div class="container-fluid">
-        <div class="navbar-wrapper">
-          <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
+      </nav>
+      <!-- End Navbar -->
       <div class="content">
         <div class="row pr-3 mb-4">
-          <button type="submit" class="btn btn-primary btn-round ml-auto" 
-          onclick="window.location.href='order-create.html'">Create Order</button>
+          <button type="submit" class="btn btn-primary btn-round ml-auto"
+            onclick="window.location.href='order-create.html'">Create Order</button>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -99,13 +99,15 @@
                   <option value="" disabled selected>Select a filter for search</option>
                   <option value="Order Number">Order Number</option>
                   <option value="Order Date">Order Date</option>
-                  <option value="Customer">Customer</option>
                   <option value="Equipment">Equipment</option>
-                  <option value="Warranty">Warranty</option>
+                  <option value="Start Date">Start Date</option>
+                  <option value="End Date">End Date</option>
+                  <option value="Status">Status</option>
 
                 </select>
                 <div class="pr-3 d-flex align-items-center">
-                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Order..." title="Type in a part">
+                  <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary"
+                    placeholder="Search Order..." title="Type in a part">
                   <span class="text-primary">
                     <i class="bi bi-search ml-2 pr-2 h4"></i>
                   </span>
@@ -123,20 +125,20 @@
                           Date
                         </th>
                         <th class="text-center">
-                          Customer
-                        </th>
-                        <th class="text-center">
                           Equipment
                         </th>
-                        <th class="text-center d-none d-xxl-table-cell">
-                          Description
+
+                        <th class="text-center">
+                          Start Date
                         </th>
                         <th class="text-center">
-                          Warranty
-                        </th>     
-                        
+                          End Date
+                        </th>
+                        <th class="text-center">
+                          Status
+                        </th>
                       </tr>
-                      </thead>
+                    </thead>
                     <tbody>
                       <tr>
                         <td>
@@ -146,20 +148,22 @@
                           October 22, 2023
                         </td>
                         <td class="text-center">
-                          John Doe
+                          Lawnmower H345
                         </td>
                         <td class="text-center">
-                          Lawnmower H345
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Lawnmower Engine don't Start
-                        </td>  
+
+                        </td>
                         <td class="text-center">
-                          Yes
-                        </td>   
+
+                        </td>
+                        <td class="text-center">
+                          Pending
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                       <tr>
@@ -167,23 +171,25 @@
                           ES-2023-0002
                         </td>
                         <td class="text-center">
-                          October 22, 2023
-                        </td>
-                        <td class="text-center">
-                          Jordan Dunn
+                          October 17, 2023
                         </td>
                         <td class="text-center">
                           Lawnmower PP56
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Excessive Vibration and Noise
-                        </td>  
+                        </td>
                         <td class="text-center">
-                          Yes
-                        </td>   
+                          October 28, 2023
+                        </td>
+                        <td class="text-center">
+
+                        </td>
+                        <td class="text-center">
+                          In Progress
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                       <tr>
@@ -191,23 +197,25 @@
                           ES-2023-0003
                         </td>
                         <td class="text-center">
-                          October 23, 2023
-                        </td>
-                        <td class="text-center">
-                          Jeremy Dean
+                          October 14, 2023
                         </td>
                         <td class="text-center">
                           Recycler 24-inch
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Lawnmower Leaking Oil or Fuel
-                        </td>  
+                        </td>
                         <td class="text-center">
-                          No
-                        </td>   
+                          October 15, 2023
+                        </td>
+                        <td class="text-center">
+                          October 15, 2023
+                        </td>
+                        <td class="text-center">
+                          Completed
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                       <tr>
@@ -215,23 +223,25 @@
                           ES-2023-0004
                         </td>
                         <td class="text-center">
-                          October 26, 2023
-                        </td>
-                        <td class="text-center">
-                          Joseph Daniels
+                          October 8, 2023
                         </td>
                         <td class="text-center">
                           Lawnmower PP56
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Lawnmower Pull Cord Jammed
-                        </td>  
+                        </td>
                         <td class="text-center">
-                          Yes
-                        </td>   
+                          October 13, 2023
+                        </td>
+                        <td class="text-center">
+
+                        </td>
+                        <td class="text-center">
+                          In Progress
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                       <tr>
@@ -239,23 +249,25 @@
                           ES-2023-0005
                         </td>
                         <td class="text-center">
-                          October 29, 2023
-                        </td>
-                        <td class="text-center">
-                          Jill Davis
+                          October 8, 2023
                         </td>
                         <td class="text-center">
                           Automower
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Excessive Vibration and Noise
-                        </td>  
+                        </td>
                         <td class="text-center">
-                          No
-                        </td>   
+                          October 12, 2023
+                        </td>
+                        <td class="text-center">
+                          October 14, 2023
+                        </td>
+                        <td class="text-center">
+                          Completed
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                       <tr>
@@ -263,23 +275,25 @@
                           ES-2023-0006
                         </td>
                         <td class="text-center">
-                          November 3, 2023
-                        </td>
-                        <td class="text-center">
-                          Jack Duncan
+                          September 12, 2023
                         </td>
                         <td class="text-center">
                           Recycler 26-inch
-                        </td>  
-                        <td class="text-center d-none d-xxl-table-cell">
-                          Lawnmower Leaking Oil or Fuel
-                        </td>  
+                        </td>
                         <td class="text-center">
-                          No
-                        </td>   
+                          September 14, 2023
+                        </td>
+                        <td class="text-center">
+                          September 22, 2023
+                        </td>
+                        <td class="text-center">
+                          Completed
+                        </td>
                         <td class="text-right">
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-edit.html'">Edit</button>
-                          <button class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">View</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-edit.html'">Edit</button>
+                          <button class="btn btn-primary btn-round"
+                            onclick="window.location.href='order-details.html'">View</button>
                         </td>
                       </tr>
                     </tbody>
@@ -304,27 +318,28 @@
       </div>
     </div>
   </div>
-</div>
-<footer class="footer footer-black  footer-white ">
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="#" target="_blank">Blog</a></li>
-          <li><a href="#" target="_blank">Licenses</a></li>
-        </ul>
-      </nav>
-      <div class="credits ml-auto">
-        <span class="copyright">
-          © <script>
-            document.write(new Date().getFullYear())
-          </script>, made by Web Genius
-        </span>
+  </div>
+  <footer class="footer footer-black  footer-white ">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#" target="_blank">Blog</a></li>
+            <li><a href="#" target="_blank">Licenses</a></li>
+          </ul>
+        </nav>
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made by Web Genius
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
- 
+  </footer>
+
 
 
 
