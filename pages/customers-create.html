@@ -92,13 +92,14 @@
                 <h5 class="card-title">Create Customer</h5>
               </div>
               <div class="card-body">
-                <form>
+                <form id="formSubmission">
                   <div class="row">
                     <div class="col-md-6 pr-1">
                       <div class="form-group">
                         <label>First Name</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
                           required>
+                          <span id="firstNameStar" class="star"></span>
                       </div>
                     </div>
                     <div class="col-md-6 pl-1">
@@ -106,6 +107,7 @@
                         <label>Last Name</label>
                         <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
                           required>
+                          <span id="lastNameStar" class="star"></span>
                       </div>
                     </div>
                   </div>
@@ -173,7 +175,7 @@
 
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round"
+                      <button type="submit" name="submit" class="btn btn-primary btn-round"
                         onclick="window.location.href='customer-equipment.html'">Create and Add Equipment</button>
                       <button type="button" class="btn btn-secondary btn-round"
                         onclick="window.location.href='customers.html'">Cancel</button>
@@ -233,6 +235,8 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-</body>
+  <!--Required Stars-->
+  <script src="../assets/js/required-star.js"></script>
+  </body>
 
 </html>
