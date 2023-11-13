@@ -89,11 +89,11 @@
       <!-- Details card -->
       <div class="content" id="form">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-lg-12">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Order Details</h5>
-                <strong>Status: In Progress</strong>
+                <strong>Status: Completed</strong>
               </div>
               <div class="update ml-auto pr-3">
                 <button class="btn btn-primary btn-round"
@@ -151,14 +151,14 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Start Date</label>
-                        <input type="text" class="form-control" disabled="" value="13/08/2023">
+                        <input type="text" class="form-control" disabled="" value="09/14/2023">
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>End Date</label>
-                        <input type="text" class="form-control" disabled="" value="">
+                        <input type="text" class="form-control" disabled="" value="09/22/2023"">
                       </div>
                     </div>
                   </div>
@@ -185,50 +185,63 @@
               History &dArr;</button>
           </div>
           <hr>
-          <div class="col-md-9">
-            <div id="card" class="collapse">
-              <table class="table" id="table">
-                <thead class=" text-primary">
-                  <tr>
-                    <th>
-                      Order Number
-                    </th>
-                    <th class="text-center">
-                      Start Date
-                    </th>
-                    <th class="text-center">
-                      End Date
-                    </th>
-                    <th class="text-center">
-                      Status
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      ES-2023-0006
-                    </td>
-                    <td class="text-center">
-                      September 14, 2023
-                    </td>
-                    <td class="text-center">
-                      September 22, 2023
-                    </td>
-                    <td class="text-center">
-                      Completed
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary btn-round"
-                        onclick="window.location.href='order-details-completed.html'">View</button>
+          <div class="card card-user">
+            <div class="col-lg-12">
+              <div id="card" class="collapse">
+                <table class="table" id="table">
+                  <thead class=" text-primary">
+                    <tr>
+                      <th>
+                        Order Number
+                      </th>
+                      <th class="text-center">
+                        Start Date
+                      </th>
+                      <th class="text-center">
+                        End Date
+                      </th>
+                      <th class="text-center">
+                        Description
+                      </th>
+                      <th class="text-center">
+                        Technician
+                      </th>
+                      <th class="text-center">
+                        Status
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        ES-2023-0006
+                      </td>
+                      <td class="text-center">
+                        September 14, 2023
+                      </td>
+                      <td class="text-center">
+                        September 22, 2023
+                      </td>
+                      <td class="text-center">
+                        Fuel System Cleaning
+                      </td>
+                      <td class="text-center">
+                        Ryan Cote
+                      </td>
+                      <td class="text-center">
+                        Completed
+                      </td>
+                      <td class="text-right">
+                        <button class="btn btn-primary btn-round"
+                          onclick="window.location.href='order-details-completed.html'">View</button>
+                      </td>
+                    </tr>
 
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+        </div>
         </div>
       </div>
       <!-- End repair history table-->
