@@ -103,13 +103,13 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Start Date (e.g. YYYY-MM-DD HH:mm)</label>
-                        <input type="datetime-local" class="form-control" id="datetimepicker" required>
+                        <input type="text" class="form-control" id="" value="14/11/2023 - 12:20" disabled>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>End Date (e.g. YYYY-MM-DD HH:mm)</label>
-                        <input type="datetime-local" class="form-control" id="" required>
+                        <input type="text" class="form-control" id="" value="14/11/2023 - 14:20" disabled>
                       </div>
                     </div>
                   </div>
@@ -117,15 +117,15 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Technician (e.g. Ryan Cote)</label>
-                        <input type="text" class="form-control" id="inputTechnician" placeholder="Technician Name">                        
-                        <div id="technicianDropdownOptions" class="dropdown-options dropdown-option"></div>
+                        <input type="text" class="form-control" id="inputTechnician" placeholder="Technician Name" value="Ryan Cote" disabled>                        
+                        
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Description (e.g. Engine Failure: Unable to Start)</label>                        
-                        <input type="text" class="form-control" id="inputDescription" placeholder="Description">                        
-                        <div id="descriptionDropdownOptions" class="dropdown-options dropdown-option"></div>
+                        <input type="text" class="form-control" id="inputDescription" placeholder="Description" value="Engine Failure: Unable to Start" disabled>                        
+                        
                       </div>
                     </div>                     
                   </div>
@@ -133,9 +133,9 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Work Log Status?</label>                        
-                        <select id="Status" name="status" class="form-control" required>
+                        <select id="Status" name="status" class="form-control" required disabled>
                           <option selected disabled value="">Select an option</option>
-                          <option value="1">Completed</option>
+                          <option value="1" selected>Completed</option>
                           <option value="2">In Progress</option>   
                           <option value="3">Pending</option>                       
                         </select>
@@ -146,8 +146,8 @@
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='worklog-update.html'">Update Work Log</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='orders.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='worklog-order-details.html'">Next</button>
+                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='worklog-create.html'">Cancel</button>
                     </div>
                   </div>
                 </form>
