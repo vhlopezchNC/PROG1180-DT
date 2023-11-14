@@ -93,7 +93,7 @@
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Order Details</h5>
-                <strong>Status: Completed</strong>
+                <strong>Status: In Progress</strong>
               </div>
               <!--<div class="update ml-auto pr-3">
                 <button class="btn btn-primary btn-round"
@@ -135,7 +135,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Description</label>
-                        <input type="text" class="form-control" disabled="" value="Fuel System Cleaning">
+                        <input type="text" class="form-control" disabled="" value="Engine Failure: Unable to Start">
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -148,10 +148,10 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Work Log Status?</label>                        
-                        <select id="Status" name="status" class="form-control" required disabled>
+                        <select id="Status" name="status" class="form-control" required>
                           <option selected disabled value="">Select an option</option>
-                          <option value="1" selected>Completed</option>
-                          <option value="2">In Progress</option>   
+                          <option value="1">Completed</option>
+                          <option value="2" selected>In Progress</option>   
                           <option value="3">Pending</option>                       
                         </select>
                       </div>
@@ -176,9 +176,9 @@
                   <div class="row">
                     <div class="update ml-auto pr-3">
                       <button type="button" class="btn btn-primary btn-round"
-                        onclick="window.location.href='worklog-details.html'">Edit</button>
-                      <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='worklogs.html'">Done</button>
+                        onclick="window.location.href='worklog-details-completed.html'">Update</button>
+                      <!-- <button type="button" class="btn btn-secondary btn-round"
+                        onclick="window.location.href='orders.html'">Cancel</button> -->
                     </div>
                   </div>
                 </form>
@@ -190,10 +190,13 @@
 
           <!-- Repair history table-->
           <div class="container">
-
-            <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card"> Repair
-              History &dArr;</button>
-          </div>
+            <div class="d-flex justify-content-between">
+              <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card"> Repair
+                History &dArr;</button>
+                <button class="btn btn-primary btn-round"
+                onclick="window.location.href='worklog-create-2.html'">New Work Log</button>
+            </div>
+        </div>
           <hr>
           <div class="card card-user">
             <div class="col-lg-12">
@@ -227,10 +230,10 @@
                         ES-2023-0006
                       </td>
                       <td class="text-center">
-                        September 14, 2023
+                        November 15, 2023
                       </td>
                       <td class="text-center">
-                        September 22, 2023
+                        November 15, 2023
                       </td>
                       <td class="text-center">
                         Fuel System Cleaning
@@ -243,7 +246,7 @@
                       </td>
                       <td class="text-right">
                         <button class="btn btn-primary btn-round"
-                          onclick="window.location.href='order-details-completed.html'">View</button>
+                          onclick="window.location.href='worklog-update-view.html'">View</button>
                       </td>
                     </tr>
                     <tr>
@@ -270,6 +273,7 @@
                           onclick="window.location.href='worklog-update-view.html'">View</button>
                       </td>
                     </tr>
+
                   </tbody>
                 </table>
               </div>
