@@ -21,70 +21,45 @@ function myFunction() {
 document.addEventListener("DOMContentLoaded", function() {
   // get today value for date picker YYYY-MM-DD
   var today = new Date().toISOString().split('T')[0];
-  
   // assign today value
   document.getElementById("datepicker").value = today;  
 });
 
-//function to input text and filter the info through dropdownlists
-/*document.addEventListener("DOMContentLoaded", function() {
-  var customers = ["John Doe", "Jordan Dunn", "Jeremy Dean", "Jane Day", "Jill Davis", "Jack Duncan", "Joseph Daniels"];
-
-  var inputText = document.getElementById("inputCustomer");
-  var dropdownOptions = document.getElementById("dropdownOptions");
-
-  inputText.addEventListener("input", function() {
-      var inputTextValue = inputText.value.toLowerCase();
-      dropdownOptions.innerHTML = ""; // Limpiar las opciones existentes
-
-      // Filtrar opciones basadas en las iniciales ingresadas
-      var filteredCustomers = customers.filter(function(customer) {
-          return customer.toLowerCase().startsWith(inputTextValue);
-      });
-
-      // Agregar opciones filtradas al dropdown
-      filteredCustomers.forEach(function(customer) {
-          var option = document.createElement("div");
-          option.className = "dropdown-option";
-          option.textContent = customer;
-          option.addEventListener("click", function() {
-              inputText.value = customer;
-              dropdownOptions.innerHTML = ""; // Ocultar el dropdown después de seleccionar
-          });
-
-          // Agregar evento hover para resaltar las opciones
-          option.addEventListener("mouseenter", function() {
-            option.style.backgroundColor = "#f2f2f2";
-        });
-
-        option.addEventListener("mouseleave", function() {
-            option.style.backgroundColor = "";
-        });
-
-          dropdownOptions.appendChild(option);
-      });
-      // Mostrar el dropdown solo si hay opciones
-      dropdownOptions.style.display = filteredCustomers.length ? "block" : "none";
-  });
-  // Ocultar el dropdown cuando se hace clic fuera de él
-  document.addEventListener("click", function(event) {
-    if (!dropdownOptions.contains(event.target) && event.target !== inputText) {
-        dropdownOptions.style.display = "none";
-    }
-  });
-});*/
-
 document.addEventListener("DOMContentLoaded", function() {
+  // Obtener la fecha y hora actual en la zona horaria local
+  var today = new Date();
+  
+  // Obtener componentes individuales de fecha y hora
+  var year = today.getFullYear();
+  var month = String(today.getMonth() + 1).padStart(2, '0');  // enero es 0
+  var day = String(today.getDate()).padStart(2, '0');
+  var hours = String(today.getHours()).padStart(2, '0');
+  var minutes = String(today.getMinutes()).padStart(2, '0');
+  
+  // Formato deseado: YYYY-MM-DDTHH:mm
+  var formattedToday = `${year}-${month}-${day}T${hours}:${minutes}`;
+  
+  // Asignar el valor actual al campo datetime-local
+  document.getElementById("datetimepicker").value = formattedToday;
+});
+
+
+//Metodo valido
+/*document.addEventListener("DOMContentLoaded", function() {
   var customerInput = document.getElementById("inputCustomer");
   var equipmentInput = document.getElementById("inputEquipment");
   var descriptionInput = document.getElementById("inputDescription");
+  var technicianInput = document.getElementById("inputTechnician");
+
   var customerDropdownOptions = document.getElementById("customerDropdownOptions");
   var equipmentDropdownOptions = document.getElementById("equipmentDropdownOptions");
   var descriptionDropdownOptions = document.getElementById("descriptionDropdownOptions");
+  var technicianDropdownOptions = document.getElementById("technicianDropdownOptions");
 
   var customers = ["John Doe", "Jordan Dunn", "Jeremy Dean", "Jane Day", "Jill Davis", "Jack Duncan", "Joseph Daniels"];
   var equipment = ["Lawnmower H345", "Lawnmower PP56", "Leaf Blower B550", "Chainsaw C700", "Hedge Trimmer H123"];
-  var descriptions = ["Engine Failure: Unable to Start", "Lawnmower Stalling During Operation", "Excessive Vibration and Noise", "Blades Not Rotating Properly", "Uneven Cutting or Scalping", "Difficulty in Gear Shifting"]
+  var descriptions = ["Engine Failure: Unable to Start", "Lawnmower Stalling During Operation", "Excessive Vibration and Noise", "Blades Not Rotating Properly", "Uneven Cutting or Scalping", "Difficulty in Gear Shifting"];
+  var technicians = ["Catalin Spirleanu", "Jorge Castano", "Nigel Temple", "Ryan Cote", "Victor Lopez"];
 
   function handleInput(inputElement, data, dropdownOptions) {
       inputElement.addEventListener("input", function() {
@@ -127,7 +102,84 @@ document.addEventListener("DOMContentLoaded", function() {
   handleInput(customerInput, customers, customerDropdownOptions);
   handleInput(equipmentInput, equipment, equipmentDropdownOptions);
   handleInput(descriptionInput, descriptions, descriptionDropdownOptions);
+  handleInput(technicianInput, technicians, technicianDropdownOptions);
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  var customerInput = document.getElementById("inputCustomer");
+  var equipmentInput = document.getElementById("inputEquipment");
+  var descriptionInput = document.getElementById("inputDescription");
+  var technicianInput = document.getElementById("inputTechnician");
+
+  var customerDropdownOptions = document.getElementById("customerDropdownOptions");
+  var equipmentDropdownOptions = document.getElementById("equipmentDropdownOptions");
+  var descriptionDropdownOptions = document.getElementById("descriptionDropdownOptions");
+  var technicianDropdownOptions = document.getElementById("technicianDropdownOptions");
+
+  var customers = ["John Doe", "Jordan Dunn", "Jeremy Dean", "Jane Day", "Jill Davis", "Jack Duncan", "Joseph Daniels"];
+  var equipment = ["Lawnmower H345", "Lawnmower PP56", "Leaf Blower B550", "Chainsaw C700", "Hedge Trimmer H123"];
+  var descriptions = ["Engine Failure: Unable to Start", "Lawnmower Stalling During Operation", "Excessive Vibration and Noise", "Blades Not Rotating Properly", "Uneven Cutting or Scalping", "Difficulty in Gear Shifting"];
+  var technicians = ["Catalin Spirleanu", "Jorge Castano", "Nigel Temple", "Ryan Cote", "Victor Lopez"];
+
+  function handleInput(inputElement, data, dropdownOptions) {
+      inputElement.addEventListener("input", function() {
+          var inputTextValue = inputElement.value.trim().toLowerCase();
+          dropdownOptions.innerHTML = ""; // Limpiar las opciones existentes
+
+          // Filtrar opciones basadas en las iniciales ingresadas
+          var filteredData = data.filter(function(item) {
+              return item.toLowerCase().includes(inputTextValue);
+          });
+
+          // Agregar opciones filtradas al dropdown
+          filteredData.forEach(function(item) {
+              var option = document.createElement("div");
+              option.className = "dropdown-option";
+              option.textContent = item;
+              option.addEventListener("click", function() {
+                  inputElement.value = item;
+                  dropdownOptions.innerHTML = ""; // Ocultar el dropdown después de seleccionar                  
+              });
+
+              // Agregar evento hover para resaltar las opciones
+              option.addEventListener("mouseenter", function() {
+                  option.style.backgroundColor = "#007bff";
+                  option.style.color = "#fff";                  
+              });
+
+              option.addEventListener("mouseleave", function() {
+                  option.style.backgroundColor = "";
+                  option.style.color = "#000";
+              });
+
+              dropdownOptions.appendChild(option);
+          });
+
+          // Mostrar el dropdown solo si hay opciones
+          dropdownOptions.style.display = filteredData.length ? "block" : "none";
+      });
+  }
+
+  function closeDropdownsOnWindowClick() {
+      window.addEventListener("click", function(event) {
+          if (!event.target.matches('.form-control')) {
+              // Si se hace clic fuera del área del input, ocultar todos los dropdowns
+              customerDropdownOptions.style.display = "none";
+              equipmentDropdownOptions.style.display = "none";
+              descriptionDropdownOptions.style.display = "none";
+              technicianDropdownOptions.style.display = "none";
+          }
+      });
+  }
+
+  handleInput(customerInput, customers, customerDropdownOptions);
+  handleInput(equipmentInput, equipment, equipmentDropdownOptions);
+  handleInput(descriptionInput, descriptions, descriptionDropdownOptions);
+  handleInput(technicianInput, technicians, technicianDropdownOptions);
+  closeDropdownsOnWindowClick();
 });
+
+
 
 /* 
 Code help from: https://www.w3schools.com/howto/howto_js_filter_table.asp

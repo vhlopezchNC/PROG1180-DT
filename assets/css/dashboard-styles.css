@@ -39,3 +39,7 @@ li a:hover .icon-img-bar{
 .white-bg-icon{
     background-color: white;
 }
+
+.borderHeight{
+    height: 38px;
+}
