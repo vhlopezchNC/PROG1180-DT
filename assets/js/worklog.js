@@ -110,7 +110,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
   var descriptions = ["Engine Failure: Unable to Start", "Lawnmower Stalling During Operation", "Excessive Vibration and Noise", "Blades Not Rotating Properly", "Uneven Cutting or Scalping", "Difficulty in Gear Shifting"];
-  var technicians = ["Catalin Spirleanu", "Jorge Castano", "Nigel Temple", "Ryan Cote", "Victor Lopez"];
+  var technicians = ["Eugene", "Sarah"];
+    //  var technicians = ["Catalin Spirleanu", "Jorge Castano", "Nigel Temple", "Ryan Cote", "Victor Lopez"];
 
   function handleInput(inputElement, data, dropdownOptions) {
       inputElement.addEventListener("input", function() {
