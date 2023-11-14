@@ -135,7 +135,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Description</label>
-                        <input type="text" class="form-control" disabled="" value="Engine Failure: Unable to Start">
+                        <input type="text" class="form-control" disabled="" value="Fuel System Cleaning">
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -148,7 +148,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Work Log Status?</label>                        
-                        <select id="Status" name="status" class="form-control" required>
+                        <select id="Status" name="status" class="form-control" required disabled>
                           <option selected disabled value="">Select an option</option>
                           <option value="1">Completed</option>
                           <option value="2" selected>In Progress</option>   
@@ -176,9 +176,9 @@
                   <div class="row">
                     <div class="update ml-auto pr-3">
                       <button type="button" class="btn btn-primary btn-round"
-                        onclick="window.location.href='worklog-details-inprogress.html'">Update</button>
-                      <!-- <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='orders.html'">Cancel</button> -->
+                        onclick="window.location.href='worklog-details.html'">Edit</button>
+                      <button type="button" class="btn btn-secondary btn-round"
+                        onclick="window.location.href='worklogs.html'">Done</button>
                     </div>
                   </div>
                 </form>
@@ -193,10 +193,10 @@
             <div class="d-flex justify-content-between">
               <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card"> Repair
                 History &dArr;</button>
-                <button class="btn btn-primary btn-round"
+              <button class="btn btn-primary btn-round"
                 onclick="window.location.href='worklog-create-2.html'">New Work Log</button>
             </div>
-        </div>
+          </div>
           <hr>
           <div class="card card-user">
             <div class="col-lg-12">
@@ -230,10 +230,10 @@
                         ES-2023-0006
                       </td>
                       <td class="text-center">
-                        November 15, 2023
+                        September 14, 2023
                       </td>
                       <td class="text-center">
-                        November 15, 2023
+                        September 22, 2023
                       </td>
                       <td class="text-center">
                         Fuel System Cleaning
@@ -246,7 +246,7 @@
                       </td>
                       <td class="text-right">
                         <button class="btn btn-primary btn-round"
-                          onclick="window.location.href='worklog-update-view.html'">View</button>
+                          onclick="window.location.href='order-details-completed.html'">View</button>
                       </td>
                     </tr>
 
