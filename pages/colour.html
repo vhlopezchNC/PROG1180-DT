@@ -48,12 +48,12 @@
               <p><strong>Repair Orders</strong></p>
             </a>
           </li>
-          <!--<li>
-            <a href="">
-              <p><strong><img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon" />Work
-                  log</strong></p>
+          <li>
+            <a href="./worklogs.html">
+              <img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon" />
+              <p><strong>Work log</strong></p>
             </a>
-          </li>-->
+          </li>
           <li class="nav-item dropdown active">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -88,18 +88,26 @@
       <div class="content">
           <!-- Customer List -->
           <div class="row pr-3 mb-4">
-            <button type="submit" class="btn btn-primary btn-round ml-auto" onclick="window.location.href='colour-create.html'">Create Colour</button>
+            <!-- <button type="submit" class="btn btn-primary btn-round ml-auto" onclick="window.location.href='colour-create.html'">Create Colour</button> -->
           </div>
             <div class="row">
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Colour List</h4>
-                  <select name="filters" id="filters">
-                    <option value="" disabled selected>Select a filter for search</option>
-                    <option value="Colour">Colour</option>
-                  </select>
-                  <div class="pr-3 d-flex align-items-center">
+                  <div class="card-header d-flex justify-content-between">
+                    <h3 class="card-title">Colour List</h3>
+                    <button type="submit" class="btn btn-primary btn-round ml-auto" 
+                    onclick="window.location.href='colour-create.html'">Create Colour</button>
+                  </div>
+                  <br>
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex col-md-4">
+                      <select name="filters" id="filters" class="form-control mr-1 border border-primary borderHeight">
+                        <option value="" disabled selected>Select a filter for search</option>
+                        <option value="Colour">Colour</option>
+                      </select>
+                    </div>
+                  <div class="d-flex col-md-8">
                     <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Colour..." title="Type in a colour">
                     <span class="text-primary">
                       <i class="bi bi-search ml-2 pr-2 h4"></i>
