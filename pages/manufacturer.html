@@ -87,19 +87,27 @@
     <!-- End Navbar -->
       <div class="content">
         <div class="row pr-3 mb-4">
-          <button type="submit" class="btn btn-primary btn-round ml-auto" 
-          onclick="window.location.href='manufacturer-create.html'">Create Manufacturer</button>
+          <!-- <button type="submit" class="btn btn-primary btn-round ml-auto" 
+          onclick="window.location.href='manufacturer-create.html'">Create Manufacturer</button> -->
         </div>        
         <div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Manufacturer List</h4>
-                <select name="filters" id="filters">
-                  <option value="" disabled selected>Select a filter for search</option>
-                  <option value="Manufacturer Name">Manufacturer Name</option>
-                </select>
-                <div class="pr-3 d-flex align-items-center">
+                <div class="card-header d-flex justify-content-between">
+                  <h4 class="card-title"> Manufacturer List</h4>
+                  <button type="submit" class="btn btn-primary btn-round ml-auto" 
+                  onclick="window.location.href='manufacturer-create.html'">Create Manufacturer</button>
+                </div>
+                <br>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex col-md-4">
+                    <select name="filters" id="filters" class="form-control mr-1 border border-primary borderHeight">
+                      <option value="" disabled selected>Select a filter for search</option>
+                      <option value="Manufacturer Name">Manufacturer Name</option>
+                    </select>
+                  </div>
+                  <div class="d-flex col-md-8">
                   <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Manufacturer..." title="Type in a manufacturer">
                   <span class="text-primary">
                     <i class="bi bi-search ml-2 pr-2 h4"></i>
