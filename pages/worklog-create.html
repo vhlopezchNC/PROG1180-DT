@@ -97,7 +97,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Order Number</label>
-                        <input type="text" class="form-control" disabled="" value="ES-2023-0007">
+                        <input type="text" class="form-control" disabled="" value="ES-2023-0006">
                       </div>
                     </div>
                     <div class="col-md-4">
@@ -123,27 +123,21 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label>Equipment (e.g. Lawnmower H345)</label>
-                        <input type="text" class="form-control" id="inputEquipment" placeholder="Equipment">                        
-                        <div id="equipmentDropdownOptions" class="dropdown-options dropdown-option"></div>
-                      </div>
-                    </div>                      
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="form-group">
                         <label>Description (e.g. Engine Failure: Unable to Start)</label>                        
                         <input type="text" class="form-control" id="inputDescription" placeholder="Description">                        
                         <div id="descriptionDropdownOptions" class="dropdown-options dropdown-option"></div>
                       </div>
-                    </div>
+                    </div>                     
+                  </div>
+                  <div class="row">                    
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Warranty?</label>                        
-                        <select id="Warranty" name="warranty" class="form-control" required>
+                        <label>Work Log Status?</label>                        
+                        <select id="Status" name="status" class="form-control" required>
                           <option selected disabled value="">Select an option</option>
-                          <option value="1">Yes</option>
-                          <option value="2">No</option>                          
+                          <option value="1">Completed</option>
+                          <option value="2">In Progress</option>   
+                          <option value="3">Pending</option>                       
                         </select>
                       </div>
                     </div>                 
@@ -152,7 +146,7 @@
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">Create Order</button>
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='order-details.html'">Update Work Log</button>
                       <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='orders.html'">Cancel</button>
                     </div>
                   </div>
@@ -197,7 +191,7 @@
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Search Bar-->
-  <script src="../assets/js/search-bar.js"></script>
+  <script src="../assets/js/worklog.js"></script>
  
 </body>
 
