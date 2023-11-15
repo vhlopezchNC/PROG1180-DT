@@ -43,3 +43,15 @@ li a:hover .icon-img-bar{
 .borderHeight{
     height: 38px;
 }
+
+.orderCompleted{
+    color: green;
+}
+
+.orderPending{
+    color: blue;
+}
+
+.orderInProgress{
+    color: orange;
+}
