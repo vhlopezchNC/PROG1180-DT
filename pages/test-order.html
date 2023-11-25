@@ -18,6 +18,8 @@
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
   <link href="../assets/css/pagination.css" rel="stylesheet">
   <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+  <link href="../assets/css/help.css" rel="stylesheet">
+
 </head>
 
 <body class="">
@@ -95,16 +97,16 @@
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Order List</h4>
-                <select name="filters" id="filters">
+                 <select name="filters" id="filters"><div class="help-tip"> Test
                   <option value="" disabled selected>Select a filter for search</option>
-                  <option value="Order Number">Order Number</option>
+                  <option value="Order Number"> Order Number</option>
                   <option value="Order Date">Order Date</option>
                   <option value="Equipment">Equipment</option>
                   <option value="Start Date">Start Date</option>
                   <option value="End Date">End Date</option>
                   <option value="Status">Status</option>
 
-                </select>
+                </select></div>
                 <div class="pr-3 d-flex align-items-center">
                   <input type="text" id="userInput" onkeyup="myFunction()" class="form-control border border-primary" placeholder="Search Order..." title="Type in a part">
                   <span class="text-primary">
