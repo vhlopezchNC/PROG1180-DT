@@ -100,20 +100,20 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <div class="card-header d-flex justify-content-between">
+                                <div class="d-flex justify-content-between">
                                     <h3 class="card-title">Technician List</h3>
-                                    <button type="submit" class="btn btn-primary btn-round ml-auto"
-                                    onclick="window.location.href='technician-create.html'">Create Technician</button>    
-                                </div>
-                                <br>
+                                    <button type="submit" class="btn btn-primary ml-auto"
+                                    onclick="window.location.href='technician-create.html'"><i class="bi bi-plus-lg"></i> Create Technician</button>    
+                                </div>                                
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex col-md-4">
                                         <select name="filters" id="filters" class="form-control mr-1 border border-primary borderHeight">
                                             <option value="" disabled selected>Select a filter for search</option>
-                                            <option value="Last Name">Last Name</option>
+                                            <option value="Employee ID">Employee ID</option>
                                             <option value="First Name">First Name</option>
+                                            <option value="Last Name">Last Name</option>                                                                                       
                                         </select>
-                                    </div>
+                                    </div>                                
                                 <div class="d-flex col-md-8">
                                     <input type="text" id="userInput" onkeyup="myFunction()"
                                         class="form-control border border-primary" placeholder="Search Technician..."
@@ -123,16 +123,23 @@
                                     </span>
                                 </div>
                             </div>
+                            </div>
                             <div class="card-body">
                                 <div class="table">
                                     <table class="table" id="table">
-                                        <thead class=" text-primary">
+                                        <thead class="text-primary">
                                             <tr>
+                                                <th>
+                                                    Employee ID
+                                                </th>
+                                                <th>
+                                                    First Name
+                                                </th>
                                                 <th>
                                                     Last Name
                                                 </th>
                                                 <th>
-                                                    First Name
+                                                    Phone Number
                                                 </th>
                                                 <th>
                                                     
@@ -142,111 +149,85 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    Jones
+                                                    ESE-EMP-0001
                                                 </td>
                                                 <td>
                                                     Steve
                                                 </td>
+                                                <td>
+                                                    Jones
+                                                </td>
+                                                <td>
+                                                    (905) 348-1622
+                                                </td>
 
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                <td class="text-center">
+                                                    <button class="btn btn-primary"
+                                                        onclick="window.location.href='technician-edit.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                                                    <button class="btn btn-secondary"
+                                                        onclick="window.location.href='technician-details.html'"><i class="bi bi-eye"></i> View</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    Lambada
+                                                    ESE-EMP-0002
                                                 </td>
                                                 <td>
                                                     Beth
                                                 </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                <td>
+                                                    Lambada
+                                                </td>
+                                                <td>
+                                                    (916) 316-1984
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-primary"
+                                                        onclick="window.location.href='technician-edit.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                                                    <button class="btn btn-secondary"
+                                                        onclick="window.location.href='technician-details.html'"><i class="bi bi-eye"></i> View</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    Sparks
+                                                    ESE-EMP-0003
                                                 </td>
                                                 <td>
                                                     Victor
                                                 </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                <td>
+                                                    Sparks
+                                                </td>
+                                                <td>
+                                                    (862) 915-8857
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-primary"
+                                                        onclick="window.location.href='technician-edit.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                                                    <button class="btn btn-secondary"
+                                                        onclick="window.location.href='technician-details.html'"><i class="bi bi-eye"></i> View</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    Brewster
+                                                    ESE-EMP-0004
                                                 </td>
                                                 <td>
                                                     Punky
                                                 </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td>
-                                                    Porter
+                                                    Brewster
                                                 </td>
                                                 <td>
-                                                    Luke
+                                                    (868) 415-9974
                                                 </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
+                                                <td class="text-center">
+                                                    <button class="btn btn-primary"
+                                                        onclick="window.location.href='technician-edit.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                                                    <button class="btn btn-secondary"
+                                                        onclick="window.location.href='technician-details.html'"><i class="bi bi-eye"></i> View</button>
                                                 </td>
-                                            </tr>
-                                            <!--<tr>
-                                                <td>
-                                                    Moonstir
-                                                </td>
-                                                <td>
-                                                    Natalie
-                                                </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Jett
-                                                </td>
-                                                <td>
-                                                    Isabelle
-                                                </td>
-
-                                                <td class="text-right">
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-edit.html'">Edit</button>
-                                                    <button class="btn btn-primary btn-round"
-                                                        onclick="window.location.href='technician-details.html'">View</button>
-                                                </td>
-                                            </tr>-->
-
-
+                                            </tr> 
                                         </tbody>
                                     </table>
                                     <div class="center">
@@ -267,7 +248,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+            
     </div>
     </div>
     <footer class="footer footer-black  footer-white ">
@@ -290,11 +271,7 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <!--   Core JS Files   -->
+    <!--Core JS Files-->
     <script src="../assets/js/core/jquery.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>

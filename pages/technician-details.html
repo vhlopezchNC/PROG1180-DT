@@ -86,7 +86,7 @@
     <!-- End Navbar -->
       <div class="content" id="form">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Technician Details</h5>
@@ -94,29 +94,42 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-10">
                       <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="Jones" readonly>
+                        <label for="txtEmployeeId">Employee ID: </label>
+                        <span class="form-control-static">ESE-EMP-0001</span>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-10">
                       <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" class="form-control" placeholder="Brent" readonly>
+                        <label>First Name: </label>
+                        <span class="form-control-static">Steve</span>
                       </div>
                     </div>
                   </div>
-
-
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <div class="form-group">
+                        <label>Last Name: </label>
+                        <span class="form-control-static">Jones</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <div class="form-group">
+                        <label>Phone Number: </label>
+                        <span class="form-control-static">(905) 348-1622</span>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round"
-                        onclick="window.location.href='technician-edit.html'">Edit Technician</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='technicians.html'">Cancel</button>
-
+                      <button type="button" class="btn btn-primary"
+                        onclick="window.location.href='technician-edit.html'"><i class="bi bi-pencil-square"></i> Edit Technician</button>
+                      <button type="button" class="btn btn-secondary" onclick="window.location.href='technicians.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>

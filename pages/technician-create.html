@@ -86,37 +86,51 @@
     <!-- End Navbar -->
       <div class="content" id="form">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
-                <h5 class="card-title">Add Technician</h5>
+                <h5 class="card-title">Create Technician</h5>
               </div>
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-10">
                       <div class="form-group">
-                        <label>First Name (e.g. John)</label>
-                        <input type="text" class="form-control" placeholder="First Name" required>
+                        <label for="txtEmployeeId">Employee ID</label>
+                        <input id="txtEmployeeId" type="text" class="form-control" placeholder="" value="ESE-EMP-0005" disabled>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-10">
                       <div class="form-group">
-                        <label>Last Name (e.g. Doe)</label>
-                        <input type="text" class="form-control" placeholder="Last Name" required>
+                        <label for="txtFirstName" >First Name (e.g. John)</label>
+                        <input id="txtFirstName" type="text" class="form-control" placeholder="First Name" required>
                       </div>
                     </div>
                   </div>
-
-
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <div class="form-group">
+                        <label for="txtLastName">Last Name (e.g. Doe)</label>
+                        <input id="txtLastName" type="text" class="form-control" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <div class="form-group">
+                        <label for="txtPhoneNumber">Phone Number (e.g. 9053459877)</label>
+                        <input id="txtPhoneNumber" type="text" class="form-control" placeholder="Phone Number" pattern="[0-9]*" inputmode="numeric" title="Please enter only numeric values" required>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round"
-                        onclick="window.location.href='technician-details.html'">Add Technician</button>
-                      <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='parts.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary"
+                        onclick="window.location.href='technician-details.html'"><i class="bi bi-plus-lg"></i> Add Technician</button>
+                      <button type="button" class="btn btn-secondary"
+                        onclick="window.location.href='technicians.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>
