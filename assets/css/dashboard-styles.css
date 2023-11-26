@@ -45,13 +45,40 @@ li a:hover .icon-img-bar{
 }
 
 .orderCompleted{
-    color: green;
+    color: #fff;
+    background-color: #7BC043;
 }
 
 .orderPending{
-    color: blue;
+    color: #fff;
+    background-color: #FFD700;
 }
 
 .orderInProgress{
-    color: orange;
+    color: #fff;
+    background-color: #FFA500; 
 }
+.btn-custom {
+    color: #fff;
+    background-color: #7BC043; 
+    border-color: #7BC043; 
+  }
+  
+  .btn-custom:hover, .btn-custom:focus {    
+    color: #fff; 
+    background-color: #5CB85C; 
+    border-color: #5CB85C; 
+  }
+
+.btn-custom-inprogress {
+    color: #fff;
+    background-color: #FFA500; 
+    border-color: #FFA500; 
+  }
+  
+.btn-custom-inprogress:hover, .btn-custom-inprogress:focus {    
+    color: #fff; 
+    background-color: #FFA500; 
+    border-color: #FFA500; 
+  }
+  
