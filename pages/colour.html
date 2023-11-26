@@ -23,11 +23,11 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
-      <div class="logo">
-        <div class="logo-image-big">
-          <a href="dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
-        </div>
-      </div>
+      <div class="logo bg-top">
+            <div class="logo-image-big">
+              <a href="dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
+            </div>
+          </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
@@ -77,13 +77,13 @@
     </div>
     <div class="main-panel">
       <!--Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
-          </div>
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+            <div class="container">
+              <div class="navbar-wrapper d-flex justify-content-end align-items-center">
+                <a></a>
+              </div>
+            </div>
+          </nav>
       <!-- End Navbar -->
       <div class="content">
           <!-- Customer List -->
@@ -96,8 +96,8 @@
                 <div class="card-header">
                   <div class="card-header d-flex justify-content-between">
                     <h3 class="card-title">Colour List</h3>
-                    <button type="submit" class="btn btn-primary btn-round ml-auto" 
-                    onclick="window.location.href='colour-create.html'">Create Colour</button>
+                    <button type="submit" class="btn btn-primary ml-auto"
+                  onclick="window.location.href='colour-create.html'"><i class="bi bi-plus-lg"></i> Create Colour</button>
                   </div>
                   <br>
                   <div class="d-flex align-items-center">
@@ -139,8 +139,10 @@
                             <input type="color" id="red" name="red" value="#FF0000" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary"
+                              onclick="window.location.href='colour-update.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                            <button class="btn btn-secondary"
+                              onclick="window.location.href='colour-view.html'"><i class="bi bi-eye"></i> View</button>
                           </td>
                         </tr>
 
@@ -152,8 +154,10 @@
                             <input type="color" id="orange" name="orange" value="#F39C12" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary"
+                              onclick="window.location.href='colour-update.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                            <button class="btn btn-secondary"
+                              onclick="window.location.href='colour-view.html'"><i class="bi bi-eye"></i> View</button>
                           </td>
                         </tr>
 
@@ -165,8 +169,10 @@
                             <input type="color" id="yellow" name="yellow" value="#EEF820" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary"
+                              onclick="window.location.href='colour-update.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                            <button class="btn btn-secondary"
+                              onclick="window.location.href='colour-view.html'"><i class="bi bi-eye"></i> View</button>
                           </td>
                         </tr>
 
@@ -178,8 +184,10 @@
                             <input type="color" id="green" name="green" value="#20F820" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary"
+                              onclick="window.location.href='colour-update.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                            <button class="btn btn-secondary"
+                              onclick="window.location.href='colour-view.html'"><i class="bi bi-eye"></i> View</button>
                           </td>
                         </tr>
                         <tr>
@@ -190,8 +198,10 @@
                             <input type="color" id="blue" name="blue" value="#206FF8" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary"
+                              onclick="window.location.href='colour-update.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                            <button class="btn btn-secondary"
+                              onclick="window.location.href='colour-view.html'"><i class="bi bi-eye"></i> View</button>
                           </td>
                         </tr>
                         <!--<tr>
@@ -202,8 +212,8 @@
                             <input type="color" id="indigo" name="indigo" value="#4B0082" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary" onclick="window.location.href='colour-view.html'">View</button>                            
                           </td>
                         </tr>
 
@@ -215,8 +225,8 @@
                             <input type="color" id="violet" name="violet" value="#8F00FF" disabled>
                           </td> 
                           <td class="text-right">
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-update.html'">Edit</button>
-                            <button class="btn btn-primary btn-round" onclick="window.location.href='colour-view.html'">View</button>                            
+                            <button class="btn btn-primary" onclick="window.location.href='colour-update.html'">Edit</button>
+                            <button class="btn btn-primary" onclick="window.location.href='colour-view.html'">View</button>                            
                           </td>
                         </tr>-->
                       </tbody>
