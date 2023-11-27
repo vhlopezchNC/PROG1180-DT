@@ -93,7 +93,30 @@
                                 <h5 class="card-title">Customer Details</h5>
                             </div>
                             <div class="card-body">
-                                <form>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <p><strong>Customer Name:</strong> John Doe</p>
+                                    <p><strong>Address:</strong> 123 Simple St.</p>
+                                    <p><strong>City:</strong> Welland</p>
+                                    <p><strong>Province:</strong> Ontario</p>
+                                    <p><strong>Postal Code:</strong> L5G 8N2</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <p><strong>Email:</strong> johndoe@xyz.com</p>
+                                    <p><strong>Phone Number:</strong> (905) 123-4567</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="update ml-auto pr-3">
+                                    <button type="button" class="btn btn-primary" onclick="window.location.href='customer-edit.html'"><i class="bi bi-pencil-square"></i> Edit Customer</button>
+                                    <button type="button" class="btn btn-danger" onclick="window.location.href='customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                                  </div>
+                                </div>
+                              </div>                
+                            </div>           
+                        </div>
+                                <!--<form>
                                     <div class="row">
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
@@ -162,31 +185,24 @@
                                         </div>
                                     </div>
 
-                                </form>
-                                <div class="row">
-                                    <div class="update ml-auto pr-3">
-                                        <button class="btn btn-primary"
-                                            onclick="window.location.href='./customer-equipment-repair-details.html'">Edit
-                                            Customer
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>-->
+                                
                             </div>
                         </div>
-
+                      
                         <!-- End Details cards -->
 
                         <!-- Repair history table-->
 
                         <div class="container">
-                          <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card">Equipment Details &dArr;</button>
+                          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#card"><i class="bi bi-eye"></i> View Equipment Details <i class="bi bi-caret-down-fill"></i></button>
                         </div>
                         <hr>
                         <div class="card card-user">
                           <div class="col-lg-12">
                             <div id="card" class="collapse">
                               <div class="card-header d-flex justify-content-between">
-                                <button type="button" class="btn btn-primary btn-round ml-auto"
+                                <button type="button" class="btn btn-success ml-auto"
                                 onclick="window.location.href='customer-equipment.html'">Add New Equipment</button>
                               </div>
                               <br>
@@ -225,7 +241,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-primary" onclick="window.location.href='order-details.html'">View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                     
                                     </td>
                                   </tr>
@@ -243,7 +259,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-primary" onclick="window.location.href='order-details.html'">View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                     
                                     </td>
                                   </tr>
@@ -261,7 +277,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-primary" onclick="window.location.href='order-details.html'">View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                   
                                     </td>
                                   </tr> 
@@ -272,15 +288,15 @@
                         </div>
                             <div class="row">
                               <div class="update ml-auto pr-3">
-                                  <button class="btn btn-primary"
-                                      onclick="window.location.href='./customer-equipment-repair.html'">Add Repair Order</button>
+                                  <button class="btn btn-success"
+                                      onclick="window.location.href='./customer-equipment-repair.html'"><i class="bi bi-plus-lg"></i> Add Repair Order</button>
                               </div>
-                              <div class="row">
+                              <!--<div class="row">
                                 <div class="update ml-auto pr-3">
                                     <button class="btn btn-primary"
                                         onclick="window.location.href='customers.html'">Done</button>
                                 </div>
-                            </div> 
+                            </div> -->
                           </div>                        
                         </div>
                     </div>

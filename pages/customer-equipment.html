@@ -96,25 +96,26 @@
                             <div class="card-body">
                                 <form>
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-lg-12">
                                             <div class="form-group">
-                                                <label>Description (e.g. Lawnmower H345)</label>
-                                                <input type="text" class="form-control" placeholder="Description"
-                                                    required>
+                                                <label for="txtAreaDescription">Description (e.g. Lawnmower H345)</label>
+                                                <textarea type="text" id="txtAreaDescription" class="form-control" placeholder="Description" required></textarea>
+                                                <!--<input type="text" class="form-control" placeholder="Description"
+                                                    required>-->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-5 pr-1">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Model Number (e.g. TRS-500)</label>
-                                                <input type="text" class="form-control" placeholder="Model Number"
+                                                <label for="txtModelNumber">Model Number (e.g. TRS-500)</label>
+                                                <input id="txtModelNumber" type="text" class="form-control" placeholder="Model Number"
                                                     required>
                                             </div>
                                         </div>
-                                        <div class="col-md-7 pl-1">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Manufacturer</label>
+                                                <label for="manufacturer">Manufacturer</label>
                                                 <select id="manufacturer" name="manufacturer" class="form-control"
                                                     required>
                                                     <option selected disabled value="">Select a Manufacturer</option>
@@ -130,10 +131,10 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4 pr-1">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Category</label>
-                                                <select id="category" name="category" class="form-control" required>
+                                                <label for="category">Category</label>
+                                                <select id="category" name="category" id="category" class="form-control" required>
                                                     <option selected disabled value="">Select a Category</option>
                                                     <option value="1">Garden Tools</option>
                                                     <option value="2">Lawn Care Accessories</option>
@@ -143,9 +144,9 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 px-1">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Color</label>
+                                                <label for="color">Color</label>
                                                 <select id="color" name="color" class="form-control" required>
                                                     <option selected disabled value="">Select a Color</option>
                                                     <option value="1">Blue</option>
@@ -161,9 +162,9 @@
                                     <div class="row">
                                         <div class="update ml-auto pr-3">
                                             <button type="submit" class="btn btn-primary"
-                                                onclick="window.location.href='customer-equipment-repair-details.html'">Customer & Equipment Summary</button>
-                                            <button type="submit" class="btn btn-secondary"
-                                                onclick="window.location.href='customers-create.html'"><i class="bi bi-skip-backward"></i> Back</button>
+                                                onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-floppy"></i> Save changes and View Summary</button>
+                                            <button type="submit" class="btn btn-danger"
+                                                onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                                         </div>
                                     </div>
                                 </form>
