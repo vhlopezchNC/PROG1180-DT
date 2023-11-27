@@ -22,6 +22,8 @@
 
 <body class="">
   <div class="wrapper ">
+
+
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo bg-top">
             <div class="logo-image-big">
@@ -73,15 +75,21 @@
             </div>
           </li>
         </ul>
-        <br><br><br><br><br><br>
-        <strong>
-          <label>
-            <input type="checkbox" id="enableHelpTips"> Enable Help Tips
-          </label>
+       
 
-        </strong>
-      </div>
+        <div class="help-sidebar">
+          <strong>
+            <label>
+              <input type="checkbox" id="enableHelpTips"> Enable Help Tips
+            </label>
+          </strong>
+        </div>
+       
+    
+      </div>      
     </div>
+
+
 
     <div class="main-panel">
       <!--Navbar -->
@@ -123,7 +131,7 @@
                         <label for="lastName">Last Name:</label>
                         <label id="example">(e.g. Davis)</label>                        
                         <div class="help-tip">
-                          <p>Legal last name</p>
+                          <p>Legal last name that matches valid Government identification; Driver's Licence or Passport</p>
                         </div>
                         <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
                           required>
@@ -137,7 +145,7 @@
                         <label for="txtaddress">Address:</label>
                         <label id="example">(e.g. 123 Simple Street)</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>Residential street address</p>
                         </div>
                         <input type="text" id="txtaddress" class="form-control" placeholder="Address" required>
                       </div>
@@ -147,7 +155,7 @@
                         <label for="txtCity">City:</label>
                         <label id="example">(e.g. Toronto)</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>City</p>
                         </div>
                         <input type="text" id="txtCity" class="form-control" placeholder="City" required>
                       </div>
@@ -158,7 +166,7 @@
                       <div class="form-group">
                         <label for="province">Province:</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>Province</p>
                         </div>
                         <select id="province" name="province" class="form-control" required>
                           <option selected disabled value="">Select a Province</option>
@@ -183,7 +191,7 @@
                         <label for="txtPostalCode">Postal Code:</label>
                         <label id="example">(e.g. X7Y 3F2)</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>Postal code</p>
                         </div>
                         <input type="text" id="txtPostalCode" class="form-control" placeholder="Postal Code" required
                           pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
@@ -197,7 +205,7 @@
                         <label for="email">Email: </label>
                         <label id="example">(e.g. Email@xyz.com)</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>E-mail address</p>
                         </div>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                       </div>
@@ -207,7 +215,7 @@
                         <label for="txtPhone" >Phone Number: </label>
                         <label id="example">(e.g. 905 123 4567)</label>
                         <div class="help-tip">
-                          <p>Legal first name</p>
+                          <p>9 digit phone number</p>
                         </div>
                         <input type="tel" id="txtPhone" class="form-control" placeholder="Phone Number" pattern="\d{10}"
                           title="Please enter 10 numeric digits for the phone number">

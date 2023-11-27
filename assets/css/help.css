@@ -1,3 +1,11 @@
+.help-sidebar{
+    text-align: center;
+    padding-top: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
 .help-tip{
     position: relative;
     top: 0px;
@@ -28,8 +36,9 @@ label {
 }
 
 .help-tip:hover p{
-    display:block;
+    display: block;
     transform-origin: 100% 0%;
+    
 
     -webkit-animation: fadeIn 0.3s ease-in-out;
     animation: fadeIn 0.3s ease-in-out;
@@ -38,15 +47,16 @@ label {
 
 .help-tip p{    /* The tooltip */
     display: none;
-    text-align: center;
-    background-color: #c6c8c9;
+    text-align: left;
+    background-color: #000000;
     padding: 10px;
     width: 300px;
     position: absolute;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    right: -4px;
-    color: #000;
+    left: -4px;
+    bottom: 10px;
+    color: #fff;
     font-size: 16px;
     line-height: 1.4;
 }
@@ -57,9 +67,9 @@ label {
     width:0;
     height: 0;
     border:6px solid transparent;
-    border-bottom-color:#1E2021;
-    right:10px;
-    top:-12px;
+    border-top-color:#1E2021;
+    left:10px;
+    bottom:-12px;
 }
 
 .help-tip p:after{ /* Prevents the tooltip from being hidden */
