@@ -91,7 +91,7 @@
           </nav>
       <!-- End Navbar -->
             <br><br><br><br><br>
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Create Category</h5>
@@ -99,17 +99,18 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Category (e.g. Wireless Battery)</label>
-                        <input type="text" class="form-control" placeholder="Category Name" required>
+                        <label for="categoryName">Category (e.g. Wireless Battery)</label>
+                        <input id="categoryName" type="text" class="form-control" placeholder="Category Name" required>
                       </div>
                     </div>
-                  </div>                                    
+                  </div>
+                  <br/>                                    
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='category-details.html'">Create Category</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='category.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='category-details.html'"><i class="bi bi-plus-lg"> </i>Add Category</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='category.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>
