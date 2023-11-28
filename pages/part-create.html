@@ -92,7 +92,7 @@
     <!-- End Navbar -->
       <div class="content" id="form">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Create Part</h5>
@@ -100,35 +100,35 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Part Number (e.g LM035)</label>
-                        <input type="text" class="form-control" placeholder="Part Number" required>
+                        <label for="partNumber">Part Number (e.g LM035)</label>
+                        <input id="partNumber" type="text" class="form-control" placeholder="Part Number" required>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Description (e.g Carburetor Rebuild Kit (Kohler 25 757 11-S))</label>
-                        <input type="text" class="form-control" placeholder="Description" required>
+                        <label for="description">Description (e.g Carburetor Rebuild Kit (Kohler 25 757 11-S))</label>
+                        <input id="description" type="text" class="form-control" placeholder="Description" required>
                       </div>
                     </div>                    
                   </div>
                   <div class="row">
-                    <div class="col-md-5 pr-1">
+                    <div class="col-lg-6">
                       <div class="form-group">
-                        <label>Unit Price (e.g. 95.99)</label>
-                        <input type="number" class="form-control" placeholder="Unit Price" required>
+                        <label for="unitPrice">Unit Price (e.g. 95.99)</label>
+                        <input id="unitPrice" type="number" class="form-control" placeholder="Unit Price" required>
                       </div>
                     </div>
                   </div>                   
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='part-details.html'">Create Part</button>
-                      <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='parts.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='part-details.html'"><i class="bi bi-plus-lg"></i> Add Part</button>
+                      <button type="button" class="btn btn-danger"
+                        onclick="window.location.href='parts.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>
