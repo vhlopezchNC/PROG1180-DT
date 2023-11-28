@@ -1968,6 +1968,10 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .bg-default {
   background-color: #000000 !important; }
 
+.bg-sidebar{
+  background-color: gray !important;
+}
+
 .bg-top {
 background-color: #000000 !important; }
 
@@ -3250,8 +3254,7 @@ License - nucleoapp.com/license/
   .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"] i,
   .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"] ~ div > ul > li .sidebar-mini-icon,
   .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"] ~ div > ul > li > a {
-    color: #000000;
-    opacity: .7; }
+    color: White; }
   .sidebar[data-color="white"] .nav li:hover:not(.active) > a,
   .sidebar[data-color="white"] .nav li:focus:not(.active) > a,
   .off-canvas-sidebar[data-color="white"] .nav li:hover:not(.active) > a,
@@ -3346,7 +3349,7 @@ License - nucleoapp.com/license/
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] i,
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active .sidebar-mini-icon,
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active > a {
-    color: #7ED321;
+    color: #51cbce;
     opacity: 1; }
   .sidebar[data-active-color="default"] .nav li.active > a,
   .sidebar[data-active-color="default"] .nav li.active > a i,

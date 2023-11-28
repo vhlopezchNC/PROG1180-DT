@@ -6,7 +6,7 @@
 }
 
 .icon-hover:hover svg path{
-    fill: #7cd424;    
+    fill: #51bcda;    
 }
 
 /*dropdown styles and their options */
@@ -86,8 +86,3 @@ li a:hover .icon-img-bar{
     background-color: #333333;
     color: #FFFFFF;
   }
-
-.bg-sidebar{
-    background-color: gray;
-    color: white;
-}
