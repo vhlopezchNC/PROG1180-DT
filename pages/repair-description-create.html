@@ -90,8 +90,9 @@
             </div>
           </nav>
     <!-- End Navbar -->
-            <br><br><br><br><br>
-            <div class="col-lg-12">
+    <div class="content" id="form">
+      <div class="row">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Create Description</h5>
@@ -99,17 +100,17 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Description (e.g. Repair a broken pull cord)</label>
-                        <input type="text" class="form-control" placeholder="Description" required>
+                        <label for="description">Description: (e.g. Repair a broken pull cord)</label>                        
+                        <textarea id="description" type="text" class="form-control" placeholder="Description" required></textarea>
                       </div>
                     </div>
                   </div>                                    
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='repair-description-details.html'">Create Description</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='repair-description.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='repair-description-details.html'"><i class="bi bi-plus-lg"></i> Add Description</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='repair-description.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>

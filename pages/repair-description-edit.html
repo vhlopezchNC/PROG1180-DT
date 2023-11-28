@@ -98,7 +98,7 @@
     <!-- End Navbar -->
       <div class="content">
         <div class="row">          
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Edit Description</h5>
@@ -106,18 +106,18 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Description</label>
-                        <input type="text" class="form-control" placeholder="Description" value="Wheel or Tire Repair: Fix flat tires or replace damaged wheels for easy maneuverability." required>
+                        <label for="description">Description</label>
+                        <textarea id="description" type="text" class="form-control" placeholder="Description" required>Wheel or Tire Repair: Fix flat tires or replace damaged wheels for easy maneuverability.</textarea>
                       </div>                    
                     </div>
                   </div>                    
                   
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='repair-description-details.html'">Update Description</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='repair-description.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='repair-description-details.html'"><i class="bi bi-floppy"></i> Save changes</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='repair-description.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>
