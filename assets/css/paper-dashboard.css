@@ -1772,7 +1772,12 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
   color: #9A9A9A; }
 
-
+.fixed-top {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 .navbar {
   padding-top: 0.625rem;
