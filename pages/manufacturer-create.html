@@ -91,7 +91,7 @@
           </nav>
     <!-- End Navbar -->
             <br><br><br><br><br>
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Create Manufacturer</h5>
@@ -99,17 +99,17 @@
               <div class="card-body">
                 <form>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Manufacturer (e.g. Craftsman)</label>
-                        <input type="text" class="form-control" placeholder="Manufacturer Name" required>
+                        <label for="manufacturer">Manufacturer (e.g. Craftsman)</label>
+                        <input type="text" id="manufacturer" class="form-control" placeholder="Manufacturer Name" required>
                       </div>
                     </div>
                   </div>                                    
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='manufacturer-details.html'">Create Manufacturer</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='manufacturer.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='manufacturer-details.html'"><i class="bi bi-plus-lg"></i> Add Manufacturer</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='manufacturer.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
                 </form>

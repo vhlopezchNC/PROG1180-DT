@@ -92,28 +92,27 @@
     <!-- End Navbar -->
       <div class="content">
         <div class="row">   
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Manufacturer Details</h5>
               </div>
               <div class="card-body">
-                <form>
+                <div class="container">
                   <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Manufacturer</label>
-                        <input type="text" class="form-control" disabled="" placeholder="Manufacturer" value="Craftsman">
-                      </div>
-                    </div>
+                    <div class="col-lg-12">
+                      <p><strong>Manufacturer:</strong> Craftsman</p>
+                    </div>                    
                   </div>
+                  <br/>
+                  <br/>
                   <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='manufacturer-edit.html'">Edit Manufacturer</button>
-                      <button type="button" class="btn btn-secondary btn-round" onclick="window.location.href='manufacturer.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='manufacturer-edit.html'"><i class="bi bi-pencil-square"></i> Edit Manufacturer</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='manufacturer.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>                  
-                </form>
+                </div>
               </div>
             </div>
           </div>
