@@ -27,7 +27,7 @@
             <div class="logo-image-big">
               <a href="dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
             </div>
-          </div>
+      </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
@@ -56,7 +56,7 @@
           </li>
           <li class="active">
             <a href="./reports.html">
-              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Report icon">
+              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="report icon">
               <p><strong>Reports</strong></p>
             </a>
           </li>
@@ -83,81 +83,41 @@
     </div>
     <div class="main-panel">
       <!--Navbar -->
-<nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
             <div class="container">
               <div class="navbar-wrapper d-flex justify-content-end align-items-center">
                 <a></a>
               </div>
             </div>
-          </nav>
+      </nav>
       <!-- End Navbar -->
       <div class="content">
-        <!-- Customer List -->
-        <!--<div class="row pr-3 mb-4">
-           <button type="submit" class="btn btn-primary btn-round ml-auto"
-            onclick="window.location.href='customers-create.html'">Create Customer</button> 
-        </div>-->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header d-flex justify-content-between">
-                  <h4 class="card-title"> Create Warranty Report</h4>                  
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Generate Reports</h3>
+                  </div>
+                  <div class="card-body text-center">
+                    <div class="row justify-content-center">
+                      <div class="col-md-4">                       
+                        <button class="btn btn-primary" onclick="window.location.href='warranty-report-create.html'">Warranty Report</button>
+                      </div>
+                      <div class="col-md-4">                      
+                        <button class="btn btn-primary" onclick="window.location.href='repair-report-create.html'">Repair Order Report</button>
+                      </div>
+                      <div class="col-md-4">                
+                        <button class="btn btn-primary" onclick="window.location.href='equipment-report-create.html'">Equipment Report</button>
+                      </div>
+                    </div>
+                    <br><br>
+                  </div>
                 </div>
-                <br>
-                <div class="d-flex align-items-center">
-                  
-                </div>
-              <div class="card-body">
-                <form>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Start Date</label>
-                          <input type="date" class="form-control" required>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>End Date</label>
-                          <input type="date" class="form-control" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">                
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Manufacturer</label>
-                          <select id="manufacturer" name="manufacturer" class="form-control" required>
-                            <option selected disabled value="">Select a Manufacturer</option>
-                            <option value="CM">Craftsman</option>
-                            <option value="HD">Honda</option>
-                            <option value="HV">Husqvarna</option>
-                            <option value="JD">John Deere</option>
-                            <option value="KB">Kubota</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <div class="row">
-                      
-                    </div> -->
-                    <div class="row">
-                      <div class="update ml-auto pr-3">
-                        <button class="btn btn-primary"
-                        onclick="window.location.href='warranty-report-view.html'"><i class="bi"></i> Preview Report</button>
-                        <button type="button" class="btn btn-danger"
-                                onclick="window.location.href='reports.html'"><i class="bi bi-x-lg"></i> Cancel</button>
-                      </div>
-                    </div>
-                  </form>
-              </div>           
+              </div>
             </div>
-          </div>
-          
-
-        </div>
-      </div>
+        
+        
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
