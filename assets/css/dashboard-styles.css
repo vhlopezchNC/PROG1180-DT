@@ -82,3 +82,12 @@ li a:hover .icon-img-bar{
     border-color: #FFA500; 
   }
   
+.sidebar-menu {
+    background-color: #333333;
+    color: #FFFFFF;
+  }
+
+.bg-sidebar{
+    background-color: gray;
+    color: white;
+}
