@@ -36,7 +36,7 @@
               <p><strong>Dashboard</strong></p>
             </a>
           </li>
-          <li class="active">
+          <li>
             <a href="./customers.html">
               <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
               <p><strong>Customers</strong></p>
@@ -52,6 +52,12 @@
             <a href="./worklogs.html">
               <img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon">
               <p><strong>Work log</strong></p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./reports.html">
+              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Report icon">
+              <p><strong>Reports</strong></p>
             </a>
           </li>
           <li class="nav-item dropdown">
@@ -96,9 +102,7 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-header d-flex justify-content-between">
-                  <h3 class="card-title"> Create Warranty Report</h3>
-                  <button type="submit" class="btn btn-primary btn-round ml-auto"
-                    onclick="window.location.href='customers-create.html'">Create Report</button>  
+                  <h4 class="card-title"> Create Warranty Report</h4>                  
                 </div>
                 <br>
                 <div class="d-flex align-items-center">
@@ -107,26 +111,50 @@
               <div class="card-body">
                 <form>
                     <div class="row">
-                      <div class="col-md-8">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label>First Name (e.g. John)</label>
-                          <input type="text" class="form-control" placeholder="First Name" required>
+                          <label>Start Date</label>
+                          <input type="date" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>End Date</label>
+                          <input type="date" class="form-control" required>
                         </div>
                       </div>
                     </div>
+                    <div class="row">                
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Manufacturer</label>
+                          <select id="manufacturer" name="manufacturer" class="form-control" required>
+                            <option selected disabled value="">Select a Manufacturer</option>
+                            <option value="CM">Craftsman</option>
+                            <option value="HD">Honda</option>
+                            <option value="HV">Husqvarna</option>
+                            <option value="JD">John Deere</option>
+                            <option value="KB">Kubota</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      
+                    </div> -->
                     <div class="row">
-                      <div class="col-md-8">
-                        <div class="form-group">
-                          <label>Last Name (e.g. Doe)</label>
-                          <input type="text" class="form-control" placeholder="Last Name" required>
-                        </div>
+                      <div class="update ml-auto pr-3">
+                        <button class="btn btn-primary"
+                        onclick="window.location.href='warranty-report-view.html'"><i class="bi"></i> Preview Report</button>
+                        <button type="button" class="btn btn-danger"
+                                onclick="window.location.href='reports.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                       </div>
                     </div>
-          
                   </form>
-              </div>
+              </div>           
             </div>
           </div>
+          
 
         </div>
       </div>
