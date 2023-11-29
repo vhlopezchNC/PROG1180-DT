@@ -18,6 +18,7 @@
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
   <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
   <link href="../assets/css/pagination.css" rel="stylesheet">
+  <link href="../assets/css/reports.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -27,24 +28,106 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-header d-flex justify-content-between">
+                  <img src="../assets/img/Logo2.png" alt="Emma's Small Engines Logo">
                   <h3 class="card-title">Emma's Small Engines - Warranty Report</h3>      
                   <p class="ml-auto">Page 1</p>            
-                </div>
-                <hr>
+                </div>               
               <div class="card-body">
-                <form>                    
+                <hr>
+                <form>   
+                  <table class="table" id="table">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Manufacturer
+                        </th>
+                        <th>
+                          Start Date
+                        </th>
+                        <th>
+                          End Date
+                        </th>
+                        <th>
+                          Service
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          John Deere
+                        </td>
+                        <td>
+                          2023-03-21
+                        </td>
+                        <td>
+                          2023-03-26
+                        </td>
+                        <td>
+                          Part Replacement
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          John Deere
+                        </td>
+                        <td>
+                          2023-06-14
+                        </td>
+                        <td>
+                          2023-06-15
+                        </td>
+                        <td>
+                          General Repair
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          John Deere
+                        </td>
+                        <td>
+                          2023-09-19
+                        </td>
+                        <td>
+                          2023-09-19
+                        </td>
+                        <td>
+                          Oil Change
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          John Deere
+                        </td>
+                        <td>
+                          2023-11-27
+                        </td>
+                        <td>
+                          2023-11-30
+                        </td>
+                        <td>
+                          Diagnostics
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>      
+                  <hr>         
                     <div class="row">
                       <div class="col-md-6">
-                        <p><strong>Start Date:</strong> 2023-07-13</p>
-                        <p><strong>End Date:</strong> 2023-07-15</p>
-                        <p><strong>Manufacturer:</strong> John Deere</p>
+                        <p><strong>Sub Total:</strong> $1,000.00</p>
+                        <p><strong>Final Cost:</strong> $1,200.00</p>
+                      
                       </div>
-                    </div>        
-                    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>           -->
+                    </div>  
+                    <hr>      
+                    <br>
                     <div class="row">
                         <div class="update ml-auto pr-3">
                             <button class="btn btn-primary"
-                            onclick="window.location.href='warranty-report-view.html'"><i class="bi"></i>Print Report</button>
+                            onclick="window.location.href='warranty-report-view.html'"><i class="bi bi-printer"></i> Print Report</button>
                             <button type="button" class="btn btn-danger"
                                 onclick="window.location.href='warranty-report-create.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                         </div>

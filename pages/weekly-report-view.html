@@ -18,6 +18,7 @@
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
   <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
   <link href="../assets/css/pagination.css" rel="stylesheet">
+  <link href="../assets/css/reports.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -27,12 +28,73 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-header d-flex justify-content-between">
-                  <h3 class="card-title">Emma's Small Engines - Equipment Report</h3>      
+                  <img src="../assets/img/Logo2.png" alt="Emma's Small Engines Logo">
+                  <h3 class="card-title">Emma's Small Engines - Weekly Review Report</h3>      
                   <p class="ml-auto">Page 1</p>            
-                </div>
-                <hr>
-              <div class="card-body">
-                <form>                    
+                </div>                                     
+                  <div class="card-body">
+                    <hr>
+                    <form>    
+                      <table class="table" id="table">
+                        <thead class=" text-primary">
+                          <tr>
+                            <th>
+                              Sales
+                            </th>
+    
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>       
+                      <hr>       
+                      <table class="table" id="table">
+                        <thead class=" text-primary">
+                          <tr>
+                            <th>
+                              Repairs
+                            </th>
+    
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              John Deere
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>       
+                      <hr>
                     <div class="row">
                       <div class="col-md-6">
                         <p><strong>Equipment:</strong> Lawnmower H345</p>
@@ -43,7 +105,7 @@
                     <div class="row">
                         <div class="update ml-auto pr-3">
                             <button class="btn btn-primary"
-                            onclick="window.location.href='weekly-report-view'"><i class="bi"></i>Print Report</button>
+                            onclick="window.location.href='weekly-report-view'"><i class="bi bi-printer"></i> Print Report</button>
                             <button type="button" class="btn btn-danger"
                                 onclick="window.location.href='weekly-report-create.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                         </div>
