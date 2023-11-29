@@ -54,11 +54,20 @@
               <p><strong>Work log</strong></p>
             </a>
           </li>
-          <li class="active">
-            <a href="./reports.html">
-              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Report icon">
-              <p><strong>Reports</strong></p>
+          <li class="nav-item dropdown active">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <img src="../assets/img/reports-icon2.svg" class="icon-img-bar" alt="Management icon" >
+                  <strong>Reports</strong>
+                <i class="bi bi-caret-down-fill"></i>
+              </div>
             </a>
+            <div class="dropdown-menu dropdown-menu-right bg-top" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./warranty-report-create.html">Create Warrant Report</a>
+              <a class="dropdown-item" href="./repair-report-create.html">Create Repair Order Report</a>
+              <a class="dropdown-item" href="./weekly-report-create.html">Create Weekly Review Report</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -159,7 +168,7 @@
                     <div class="row">
                       <div class="update ml-auto pr-3">
                         <button class="btn btn-primary"
-                        onclick="window.location.href='equipment-report-view.html'"><i class="bi"></i> Preview Report</button>
+                        onclick="window.location.href='weekly-report-view.html'"><i class="bi"></i> Preview Report</button>
                         <button type="button" class="btn btn-danger"
                                 onclick="window.location.href='reports.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                       </div>
