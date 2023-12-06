@@ -1494,6 +1494,13 @@ a.text-danger:focus, a.text-danger:hover {
 a.text-gray:focus, a.text-gray:hover {
   color: #E3E3E3 !important; }
 
+
+.user-text {
+  font-weight: bold;
+  color: white !important;
+  font-size: 20px !important; 
+}
+
 .blockquote {
   border-left: none;
   border: 1px solid #000000;
