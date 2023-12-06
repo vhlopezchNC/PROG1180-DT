@@ -47,7 +47,7 @@
               <p><strong>Repair Orders</strong></p>
             </a>
           </li>
-          <li>
+          <li >
             <a href="./worklogs.html">
               <img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon">
               <p><strong>Work log</strong></p>
@@ -91,7 +91,7 @@
     </div>
     <div class="main-panel">
       <!--Navbar -->
-<nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
           <div class="container-fluid">
               <!-- Right-aligned items (user profile image and name) -->
               <div class="navbar-collapse justify-content-end">
@@ -115,148 +115,103 @@
       <!-- Details card -->
       <div class="content" id="form">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-12">
             <div class="card card-user">
               <div class="card-header">
                 <h5 class="card-title">Order Details</h5>
-                <strong>Status: Completed on September 29, 2023</strong>
+                <button type="button" class="btn btn-custom"><i class="bi bi-check2-circle"></i> Completed</button>
               </div>
-              <div class="update ml-auto pr-3">
-                <button class="btn btn-primary"
-                  onclick="window.location.href='customer-equipment-summary.html'">View Customer</button>
-              </div>
-
               <div class="card-body">
-                <form>
+                <div class="container">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Order Number</label>
-                        <input type="text" class="form-control" disabled="" value="ES-2023-0007">
-                      </div>
+                      <p><strong>Order Number:</strong> ES-2023-0003</p>
+                      <p><strong>Date:</strong> 10/14/2023</p>
+                      <p><strong>Customer:</strong> Jeremy Dean</p>
+                      <p><strong>Equipment:</strong> Recycler 24-inch</p>
                     </div>
                     <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Date</label>
-                        <input type="text" class="form-control" disabled="" value="22/09/2023">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Customer</label>
-                        <input type="text" class="form-control" disabled="" value="John Doe">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Equipment</label>
-                        <input type="text" class="form-control" disabled="" value="Lawnmower H345">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="form-group">
-                        <label>Description</label>
-                        <input type="text" class="form-control" disabled="" value="Engine Failure: Unable to Start">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Warranty?</label>
-                        <input type="text" class="form-control" disabled="" value="Yes">
-                      </div>
+                      <p><strong>Description:</strong>Does not start correctly</p>
+                      <p><strong>Warranty:</strong> Yes</p>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Start Date</label>
-                        <input type="text" class="form-control" disabled="" value="25/09/2023">
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>End Date</label>
-                        <input type="text" class="form-control" disabled="" value="29/09/2023">
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="row">
                     <div class="update ml-auto pr-3">
-                      <button type="button" class="btn btn-primary btn-round"
-                        onclick="window.location.href='order-edit.html'">Edit</button>
-                      <button type="button" class="btn btn-secondary btn-round"
-                        onclick="window.location.href='orders.html'">Cancel</button>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='order-edit2.html'"><i class="bi bi-pencil-square"></i> Edit</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='orders.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
-                  </div> -->
-                </form>
-              </div>
-
-            </div>
+                  </div>
+                </div>                
+              </div>           
           </div>
           <!-- End Details cards -->
 
           <!-- Repair history table-->
-          <!-- <div class="container">
+          <div class="container">
 
-            <button type="button" class="btn btn-primary btn-round" data-toggle="collapse" data-target="#card"> Repair
-              History &dArr;</button>
-
+            <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#card"><i class="bi bi-eye"></i> View Repair History <i class="bi bi-caret-down-fill"></i></button>
           </div>
           <hr>
-          <div class="col-md-8">
-            <div id="card" class="collapse">
-              <table class="table" id="table">
-                <thead class=" text-primary">
-                  <tr>
-                    <th>
-                      Order Number
-                    </th>
-                    <th class="text-center">
-                      Start Date
-                    </th>
-                    <th class="text-center">
-                      End Date
-                    </th>
-                    <th class="text-center">
-                      Status
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      ES-2023-0006
-                    </td>
-                    <td class="text-center">
-                      September 14, 2023
-                    </td>
-                    <td class="text-center">
-                      September 22, 2023
-                    </td>
-                    <td class="text-center">
-                      Completed
-                    </td>
-                    <td class="text-right">
-                      <button class="btn btn-primary"
-                        onclick="window.location.href='order-details-completed.html'">View</button>
-
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
+          <div class="card card-user">
+            <div class="col-lg-12">
+              <div id="card" class="collapse">
+                <table class="table" id="table">
+                  <thead class=" text-primary">
+                    <tr>
+                      <th>
+                        Order #
+                      </th>
+                      <th >
+                        Start Date
+                      </th>
+                      <th >
+                        End Date
+                      </th>
+                      <th >
+                        Description
+                      </th>
+                      <th >
+                        Technician
+                      </th>
+                      <th class="text-center">
+                        Status
+                      </th>
+                      <th>
+                        
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>                    
+                    <tr>
+                      <td>
+                        ES-2023-0006
+                      </td>
+                      <td >
+                        11/15/2023
+                      </td>
+                      <td >
+                        11/15/2023
+                      </td>
+                      <td >
+                        Air Filter Cleaning/Replacement
+                      </td>
+                      <td >
+                        Jorge Castano
+                      </td>
+                      <td class="text-center orderCompleted">
+                        <i class="bi bi-check2-circle"></i> Completed
+                      </td>
+                      <td class="text-right">
+                        <button class="btn btn-secondary"
+                          onclick="window.location.href='worklog-update-details.html'"><i class="bi bi-eye"></i> View</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </div> -->
-      </div>
+        </div>
+        </div>
       </div>
       <!-- End repair history table-->
 
@@ -282,6 +237,7 @@
 
       </footer>
     </div>
+  </div>
   </div>
 
   <!--   Core JS Files   -->

@@ -93,11 +93,22 @@
     <div class="main-panel">
       <!--Navbar -->
       <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand"></a>
+          <div class="container-fluid">
+              <!-- Right-aligned items (user profile image and name) -->
+              <div class="navbar-collapse justify-content-end">
+                  <ul class="navbar-nav">
+                      <!-- User Name -->
+                      <li class="nav-item">
+                          <span class="nav-link user-text">Admin</span>
+                      </li>
+      
+                      <!-- User Profile Image -->
+                      <li class="nav-item">
+                          <img src="/assets/img/CustomerProfile.jpg" alt="User Profile" class="rounded-circle ml-3" width="40" height="40">
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </nav>
       <!-- End Navbar -->
       <div class="content">
@@ -106,13 +117,13 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <div class="d-flex justify-content-between">
+                <div class="card-header d-flex justify-content-between">
                   <h3 class="card-title">Work Log List</h3>
                   <!--<button type="submit" class="btn btn-primary  ml-auto"
                     onclick="window.location.href='worklog-create.html'">Create Work Log
                   </button>-->
                 </div>
-                
+                <br>
                 <div class="d-flex align-items-center">
                   <div class="d-flex col-md-4">
                     <select name="filters" id="filters" class="form-control mr-1 border border-primary borderHeight">
@@ -169,7 +180,7 @@
                         <td>
                           ES-2023-0006
                         </td>
-                        <td >
+                        <td class="text-center">
                           10/22/2023
                         </td>
                         <td >
@@ -195,7 +206,7 @@
                         <td>
                           ES-2023-0005
                         </td>
-                        <td >
+                        <td class="text-center">
                           10/17/2023
                         </td>
                         <td >
@@ -220,7 +231,7 @@
                         <td>
                           ES-2023-0004
                         </td>
-                        <td >
+                        <td class="text-center">
                           10/14/2023
                         </td>
                         <td >
@@ -245,7 +256,7 @@
                         <td>
                           ES-2023-0003
                         </td>
-                        <td >
+                        <td class="text-center">
                           10/08/2023
                         </td>
                         <td >

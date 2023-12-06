@@ -81,7 +81,19 @@ li a:hover .icon-img-bar{
     background-color: #FFA500; 
     border-color: #FFA500; 
   }
+
+  .btn-custom-pending {
+    color: #fff;
+    background-color: #d4b608; 
+    border-color: #d4b608; 
+  }
   
+.btn-custom-pending:hover, .btn-custom-pending:focus {    
+    color: #fff; 
+    background-color: #d4b608; 
+    border-color: #d4b608; 
+  }
+
 .sidebar-menu {
     background-color: #333333;
     color: #FFFFFF;

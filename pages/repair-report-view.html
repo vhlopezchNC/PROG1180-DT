@@ -39,7 +39,10 @@
                     <thead class=" text-primary">
                       <tr>
                         <th>
-                          Order Date
+                          Order Number
+                        </th>
+                        <th>
+                          Date
                         </th>
                         <th>
                           Order Status
@@ -55,7 +58,10 @@
                     <tbody>
                       <tr>
                         <td>
-                          2023-03-21
+                          ES-2023-0001
+                        </td>
+                        <td>
+                          10/08/2023
                         </td>
                         <td>
                           Completed
@@ -70,7 +76,10 @@
 
                       <tr>
                         <td>
-                          2023-06-14
+                          ES-2023-0002
+                        </td>
+                        <td>
+                          10/09/2023
                         </td>
                         <td>
                           Completed
@@ -82,10 +91,12 @@
                           Lawnmower PP56
                         </td>
                       </tr>
-
                       <tr>
                         <td>
-                          2023-11-27
+                          ES-2023-0003
+                        </td>
+                        <td>
+                          10/11/2023
                         </td>
                         <td>
                           In Progress
@@ -97,6 +108,40 @@
                           Recycler 22-inch
                         </td>
                       </tr>
+                      <tr>
+                        <td>
+                          ES-2023-0004
+                        </td>
+                        <td>
+                          10/13/2023
+                        </td>
+                        <td>
+                          In Progress
+                        </td>
+                        <td>
+                          Sarah
+                        </td>
+                        <td>
+                          Lawnmower PP56
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ES-2023-0005
+                        </td>
+                        <td>
+                          10/15/2023
+                        </td>
+                        <td>
+                          Pending
+                        </td>
+                        <td>
+                          Eugene
+                        </td>
+                        <td>
+                          Lawnmower PP76
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                   <hr>            
@@ -104,7 +149,12 @@
                     <div class="row">
                         <div class="update ml-auto pr-3">
                             <button class="btn btn-primary"
-                            onclick="window.location.href='repair-report-view'"><i class="bi bi-printer"></i> Print Report</button>
+                            onclick="printReport()"><i class="bi bi-printer"></i> Print Report</button>
+                            <script>
+                              function printReport() {
+                                window.print(); // Esta línea activará la ventana de impresión del navegador al hacer clic en el botón
+                              }
+                            </script>
                             <button type="button" class="btn btn-danger"
                                 onclick="window.location.href='repair-report-create.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                         </div>
