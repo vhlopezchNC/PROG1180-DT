@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/OnlyLogo.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    ESE System
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo bg-top">
+            <div class="logo-image-big">
+              <a href="sales-dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
+            </div>
+          </div>
+      <div class="sidebar-wrapper bg-sidebar">
+        <ul class="nav">
+          <li>
+            <a href="./sales-dashboard.html" >
+              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon">
+              <p><strong>Dashboard</strong></p>
+            </a>
+          </li>
+          <li>
+            <a href="./sales-customers.html">
+              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
+              <p><strong>Customers</strong></p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./sales-orders.html">
+              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon">
+              <p><strong>Repair Orders</strong></p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <img src="../assets/img/reports-icon2.svg" class="icon-img-bar" alt="Management icon" >
+                  <strong>Reports</strong>
+                <i class="bi bi-caret-down-fill"></i>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right bg-top" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./sales-warranty-report-create.html">Create Warrant Report</a>
+              <a class="dropdown-item" href="./sales-repair-report-create.html">Create Repair Order Report</a>
+              <a class="dropdown-item" href="./sales-weekly-report-create.html">Create Weekly Review Report</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+            <div class="container">
+              <div class="navbar-wrapper d-flex justify-content-end align-items-center">
+                <a></a>
+              </div>
+            </div>
+          </nav>
+    <!-- End Navbar -->
+      <div class="content" id="form">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-user">
+              <div class="card-header">
+                <h5 class="card-title">Edit Order</h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Order Number</label>
+                        <input type="text" class="form-control" disabled="" value="ES-2023-0007">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Date</label>
+                        <input type="text" class="form-control" disabled="" value="11/08/2023">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Customer</label>
+                        <input type="text" class="form-control" id="inputCustomer" placeholder="Eg. John" value="John Doe">                        
+                        <div id="customerDropdownOptions" class="dropdown-options dropdown-option"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Equipment</label>
+                        <input type="text" class="form-control" id="inputEquipment" placeholder="Eg. Lawnmower H345" value="Lawnmower H345">                        
+                        <div id="equipmentDropdownOptions" class="dropdown-options dropdown-option"></div>
+                      </div>
+                    </div>                      
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Description</label>                        
+                        <input type="text" class="form-control" id="inputDescription" placeholder="Eg. Engine Failure: Unable to Start" value="Engine Failure: Unable to Start">                        
+                        <div id="descriptionDropdownOptions" class="dropdown-options dropdown-option"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Warranty?</label>                        
+                        <select id="Warranty" name="warranty" class="form-control" required>
+                          <option selected disabled value="">Select an option</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>                          
+                        </select>
+                      </div>
+                    </div>      
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Status</label>                        
+                        <select id="Status" name="status" class="form-control" required>
+                          <option selected disabled value="">Select an option</option>
+                          <option value="1">Pending</option>
+                          <option value="2">In Progress</option>     
+                          <option value="2">Completed</option>                       
+                        </select>
+                      </div>
+                    </div>               
+                  </div>
+                                    
+                  
+                  <div class="row">
+                    <div class="update ml-auto pr-3">
+                      <button type="button" class="btn btn-primary btn-round" onclick="window.location.href='sales-order-details.html'">Update</button>
+                      <button type="button" class="btn btn-secondary btn-round"
+                        onclick="window.location.href='sales-order-details.html'">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#" target="_blank">Blog</a></li>
+                <li><a href="#" target="_blank">Licenses</a></li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>, made by Web Genius
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Search Bar-->
+  <script src="../assets/js/search-bar.js"></script>
+</body>
+
+</html>
