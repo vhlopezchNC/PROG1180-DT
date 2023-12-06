@@ -18,6 +18,7 @@
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
   <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
   <link href="../assets/css/pagination.css" rel="stylesheet">
+  <link href="../assets/css/help.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -111,7 +112,12 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-header d-flex justify-content-between">
-                  <h4 class="card-title"> Create Repair Order Report</h4>                  
+                  <h4 class="card-title"> Create Repair Order Report</h4>   
+                  <strong>
+                    <label>
+                      <input type="checkbox" id="enableHelpTips"> Help
+                    </label>
+                  </strong>               
                 </div>
                 <br>
                 <div class="d-flex align-items-center">
@@ -123,12 +129,18 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Order Date</label>
+                          <div class="help-tip">
+                            <p>Needs text</p>
+                          </div>
                           <input type="date" class="form-control" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Order Status</label>
+                          <div class="help-tip">
+                            <p>Needs text</p>
+                          </div>
                           <select id="status" name="status" class="form-control" required>
                             <option selected disabled value="">Select a Status</option>
                             <option value="P">Pending</option>
@@ -142,6 +154,9 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Technician</label>
+                          <div class="help-tip">
+                            <p>Needs text</p>
+                          </div>
                           <select id="technician" name="technician" class="form-control" required>
                             <option selected disabled value="">Select a Technician</option>
                             <option value="E">Eugene</option>
@@ -152,6 +167,9 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Equipment</label>
+                          <div class="help-tip">
+                            <p>Needs text</p>
+                          </div>
                           <select id="equipment" name="equipment" class="form-control" required>
                             <option selected disabled value="">Select an Equipment</option>
                             <option value="H3">Lawnmower H345</option>
@@ -218,6 +236,8 @@
   <script src="../assets/js/search-bar.js"></script>
   <!--Filtering -->
   <script src="../assets/js/filtering.js"></script>
+    <!--Help-->
+    <script src="../assets/js/required-star.js"></script>
 </body>
 
 </html>
