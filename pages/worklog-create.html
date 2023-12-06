@@ -17,6 +17,7 @@
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
   <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+  <link href="../assets/css/help.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -104,8 +105,13 @@
       <div class="row">
           <div class="col-lg-12">
               <div class="card card-user">
-                  <div class="card-header">
+                <div class="card-header d-flex justify-content-between">
                       <h5 class="card-title">Create Work Log</h5>
+                      <strong>
+                        <label>
+                          <input type="checkbox" id="enableHelpTips"> Help
+                        </label>
+                      </strong>
                   </div>
                   <div class="card-body">
                       <form>
@@ -113,12 +119,18 @@
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="orderNumber">Order Number</label>
+                                      <div class="help-tip">
+                                        <p>Order number is automatically generated when a repair order is created.</p>
+                                      </div>
                                       <input id="orderNumber" type="text" class="form-control" disabled="" value="ES-2023-0006">
                                   </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="technician">Technician</label>
+                                    <div class="help-tip">
+                                      <p>Technician is automatically generated based on Technician login.</p>
+                                    </div>
                                     <input id="technician" type="text" class="form-control" id="inputTechnician" placeholder="Ryan Cote" disabled>
                                     <div id="technicianDropdownOptions" class="dropdown-options dropdown-option"></div>
                                 </div>
@@ -128,12 +140,18 @@
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="datetimepicker">Start Date (e.g. YYYY-MM-DD HH:mm)</label>
+                                      <div class="help-tip">
+                                        <p>Start date is today's date and time, and will be recorded as the start time for repair order.</p>
+                                      </div>
                                       <input type="datetime-local" class="form-control" id="datetimepicker" required>
                                   </div>
                               </div>                          
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="endDate">End Date (e.g. YYYY-MM-DD HH:mm)</label>
+                                      <div class="help-tip">
+                                        <p>End date to be input once repair order has been completed.</p>
+                                      </div>
                                       <input id="endDate" type="datetime-local" class="form-control" required>
                                   </div>
                               </div>
@@ -142,6 +160,9 @@
                               <div class="col-lg-12">
                                   <div class="form-group">
                                       <label for="textAreaDescription">Description (e.g. Engine Failure: Unable to Start)</label>
+                                      <div class="help-tip">
+                                        <p>Description to include the repair notes of equipement.</p>
+                                      </div>
                                       <textarea class="form-control" id="textAreaDescription" placeholder="Description"></textarea>
                                   </div>
                               </div>
@@ -150,6 +171,9 @@
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label>Work Log Status?</label>
+                                      <div class="help-tip">
+                                        <p>Update status of repair order.</p>
+                                      </div>
                                       <select id="Status" name="status" class="form-control" required>
                                           <option selected disabled value="">Select an option</option>
                                           <option value="1">Completed</option>
@@ -283,6 +307,8 @@
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Search Bar-->
   <script src="../assets/js/worklog.js"></script>
+        <!--Help-->
+  <script src="../assets/js/required-star.js"></script>
  
 </body>
 

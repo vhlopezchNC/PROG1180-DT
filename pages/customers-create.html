@@ -136,7 +136,7 @@
                         <label for="firstName">First Name: </label>                        
                         <label id="example">(e.g. John)</label>
                         <div class="help-tip">
-                          <p>Legal first name that matches valid Government identification; Driver's Licence or Passport</p>
+                          <p>Legal First Name: As on government ID (Driver's License or Passport)</p>
                         </div>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
                           required>
@@ -148,7 +148,7 @@
                         <label for="lastName">Last Name:</label>
                         <label id="example">(e.g. Davis)</label>                        
                         <div class="help-tip">
-                          <p>Legal last name that matches valid Government identification; Driver's Licence or Passport</p>
+                          <p>Legal Last Name: As on government ID (Driver's License or Passport)</p>
                         </div>
                         <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
                           required>
@@ -162,7 +162,7 @@
                         <label for="txtaddress">Address:</label>
                         <label id="example">(e.g. 123 Simple Street)</label>
                         <div class="help-tip">
-                          <p>Residential street address</p>
+                          <p>Residential Address: Current home address</p>
                         </div>
                         <input type="text" id="txtaddress" class="form-control" placeholder="Address" required>
                       </div>
@@ -172,7 +172,7 @@
                         <label for="txtCity">City:</label>
                         <label id="example">(e.g. Toronto)</label>
                         <div class="help-tip">
-                          <p>City</p>
+                          <p>City: City of residence</p>
                         </div>
                         <input type="text" id="txtCity" class="form-control" placeholder="City" required>
                       </div>
@@ -183,7 +183,7 @@
                       <div class="form-group">
                         <label for="province">Province:</label>
                         <div class="help-tip">
-                          <p>Province</p>
+                          <p>Province: Current province of residence</p>
                         </div>
                         <select id="province" name="province" class="form-control" required>
                           <option selected disabled value="">Select a Province</option>
@@ -208,7 +208,7 @@
                         <label for="txtPostalCode">Postal Code:</label>
                         <label id="example">(e.g. X7Y 3F2)</label>
                         <div class="help-tip">
-                          <p>Postal code</p>
+                          <p> Postal Code: A postal code can only have letters (A-Z) and numbers (0-9) and must be in the following format: A1A 1A1. </p>
                         </div>
                         <input type="text" id="txtPostalCode" class="form-control" placeholder="Postal Code" required
                           pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
@@ -222,7 +222,7 @@
                         <label for="email">Email: </label>
                         <label id="example">(e.g. Email@xyz.com)</label>
                         <div class="help-tip">
-                          <p>E-mail address</p>
+                          <p>E-mail Address: Valid email for communication (e.g., example@example.com)</p>
                         </div>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                       </div>
@@ -232,7 +232,7 @@
                         <label for="txtPhone" >Phone Number: </label>
                         <label id="example">(e.g. 905 123 4567)</label>
                         <div class="help-tip">
-                          <p>9 digit phone number</p>
+                          <p>Phone Number: Primary contact number (10 digits)</p>
                         </div>
                         <input type="tel" id="txtPhone" class="form-control" placeholder="Phone Number" pattern="\d{10}"
                           title="Please enter 10 numeric digits for the phone number">
@@ -302,7 +302,7 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-  <!--Required Stars-->
+  <!--Help-->
   <script src="../assets/js/required-star.js"></script>
 </body>
 
