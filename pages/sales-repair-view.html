@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/OnlyLogo.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    ESE System
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+  <link href="../assets/css/pagination.css" rel="stylesheet">
+  <link href="../assets/css/reports.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+      <div class="content col-8 mx-auto">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-header d-flex justify-content-between">
+                  <img src="../assets/img/Logo2.png" alt="Emma's Small Engines Logo">
+                  <h3 class="card-title">Emma's Small Engines - Repair Order Report</h3>      
+                  <p class="ml-auto">Page 1</p>            
+                </div>            
+              <div class="card-body">
+                <hr>
+                <form>     
+                  <table class="table" id="table">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Order Date
+                        </th>
+                        <th>
+                          Order Status
+                        </th>
+                        <th>
+                          Technician
+                        </th>
+                        <th>
+                          Equipment
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          2023-03-21
+                        </td>
+                        <td>
+                          Completed
+                        </td>
+                        <td>
+                          Eugene
+                        </td>
+                        <td>
+                          Lawnmower H345
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          2023-06-14
+                        </td>
+                        <td>
+                          Completed
+                        </td>
+                        <td>
+                          Sarah
+                        </td>
+                        <td>
+                          Lawnmower PP56
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          2023-11-27
+                        </td>
+                        <td>
+                          In Progress
+                        </td>
+                        <td>
+                          Sarah
+                        </td>
+                        <td>
+                          Recycler 22-inch
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <hr>            
+                  <br><br>                 
+                    <div class="row">
+                        <div class="update ml-auto pr-3">
+                            <button class="btn btn-primary"
+                            onclick="window.location.href='sales-repair-report-view'"><i class="bi bi-printer"></i> Print Report</button>
+                            <button type="button" class="btn btn-danger"
+                                onclick="window.location.href='sales-repair-report-create.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                        </div>
+                    </div>
+                  </form>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Search Bar-->
+  <script src="../assets/js/search-bar.js"></script>
+  <!--Filtering -->
+  <script src="../assets/js/filtering.js"></script>
+</body>
+
+</html>
