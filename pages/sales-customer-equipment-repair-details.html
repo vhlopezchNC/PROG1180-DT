@@ -22,36 +22,30 @@
 
 <body class="">
     <div class="wrapper ">
-<div class="sidebar" data-color="white" data-active-color="danger">
-      <div class="logo bg-top">
+        <div class="sidebar" data-color="white" data-active-color="danger">
+          <div class="logo">
             <div class="logo-image-big">
-              <a href="dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
+              <a href="sales-dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
             </div>
-      </div>
+          </div>
           <div class="sidebar-wrapper bg-sidebar">
             <ul class="nav">
               <li>
-                <a href="./dashboard.html" >
+                <a href="./sales-dashboard.html" >
                   <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon">
                   <p><strong>Dashboard</strong></p>
                 </a>
               </li>
               <li class="active">
-                <a href="./customers.html">
+                <a href="./sales-customers.html">
                   <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
                   <p><strong>Customers</strong></p>
                 </a>
               </li>
               <li>
-                <a href="./orders.html">
+                <a href="./sales-orders.html">
                   <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon">
                   <p><strong>Repair Orders</strong></p>
-                </a>
-              </li>
-              <li>
-                <a href="./worklogs.html">
-                  <img src="../assets/img/repair-tools.svg" class="icon-img-bar" alt="tools icon">
-                  <p><strong>Work log</strong></p>
                 </a>
               </li>
               <li class="nav-item dropdown">
@@ -64,27 +58,9 @@
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right bg-top" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./warranty-report-create.html">Create Warrant Report</a>
-                  <a class="dropdown-item" href="./repair-report-create.html">Create Repair Order Report</a>
-                  <a class="dropdown-item" href="./weekly-report-create.html">Create Weekly Review Report</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
-                      <img src="../assets/img/management.svg" class="icon-img-bar" alt="Management icon">
-                      <strong>Management</strong>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </div>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right bg-top" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./category.html">Category</a>
-                  <a class="dropdown-item" href="./colour.html">Colour</a>
-                  <a class="dropdown-item" href="./manufacturer.html">Manufacturer</a>
-                  <a class="dropdown-item" href="./parts.html">Part</a>
-                  <a class="dropdown-item" href="./repair-description.html">Repair Description</a>
-                  <a class="dropdown-item" href="./technicians.html">Technician</a>
+                  <a class="dropdown-item" href="./sales-warranty-report-create.html">Create Warrant Report</a>
+                  <a class="dropdown-item" href="./sales-repair-report-create.html">Create Repair Order Report</a>
+                  <a class="dropdown-item" href="./sales-weekly-report-create.html">Create Weekly Review Report</a>
                 </div>
               </li>
             </ul>
@@ -93,23 +69,12 @@
         <div class="main-panel">
         <!--Navbar -->
         <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
-          <div class="container-fluid">
-              <!-- Right-aligned items (user profile image and name) -->
-              <div class="navbar-collapse justify-content-end">
-                  <ul class="navbar-nav">
-                      <!-- User Name -->
-                      <li class="nav-item">
-                          <span class="nav-link user-text">Admin</span>
-                      </li>
-      
-                      <!-- User Profile Image -->
-                      <li class="nav-item">
-                          <img src="/assets/img/CustomerProfile.jpg" alt="User Profile" class="rounded-circle ml-3" width="40" height="40">
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
+                </div>
+            </div>
+        </nav>
       <!-- End Navbar -->
             <div class="content">
                 <div class="row">
@@ -135,8 +100,8 @@
                                 </div>
                                 <div class="row">
                                   <div class="update ml-auto pr-3">
-                                    <button type="button" class="btn btn-primary" onclick="window.location.href='customer-edit.html'"><i class="bi bi-pencil-square"></i> Edit Customer</button>
-                                    <button type="button" class="btn btn-danger" onclick="window.location.href='customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                                    <button type="button" class="btn btn-primary" onclick="window.location.href='sales-customer-edit.html'"><i class="bi bi-pencil-square"></i> Edit Customer</button>
+                                    <button type="button" class="btn btn-danger" onclick="window.location.href='sales-customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                                   </div>
                                 </div>
                               </div>                
@@ -229,7 +194,7 @@
                             <div id="card" class="collapse">
                               <div class="card-header d-flex justify-content-between">
                                 <button type="button" class="btn btn-success ml-auto"
-                                onclick="window.location.href='customer-equipment.html'">Add New Equipment</button>
+                                onclick="window.location.href='sales-customer-equipment.html'">Add New Equipment</button>
                               </div>
                               <br>
                               <table class="table" id="table">
@@ -267,7 +232,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='sales-worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                     
                                     </td>
                                   </tr>
@@ -285,7 +250,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='sales-worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                     
                                     </td>
                                   </tr>
@@ -303,7 +268,7 @@
                                       Lawnmowers
                                     </td>                        
                                     <td class="text-right">
-                                      <button class="btn btn-secondary" onclick="window.location.href='worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
+                                      <button class="btn btn-secondary" onclick="window.location.href='sales-worklog-details-completed.html'"><i class="bi bi-eye"></i> View</button>
                                   
                                     </td>
                                   </tr> 
@@ -315,7 +280,7 @@
                             <div class="row">
                               <div class="update ml-auto pr-3">
                                   <button class="btn btn-success"
-                                      onclick="window.location.href='./customer-equipment-repair.html'"><i class="bi bi-plus-lg"></i> Add Repair Order</button>
+                                      onclick="window.location.href='./sales-customer-equipment-repair.html'"><i class="bi bi-plus-lg"></i> Add Repair Order</button>
                               </div>
                               <!--<div class="row">
                                 <div class="update ml-auto pr-3">
@@ -331,7 +296,7 @@
 
 
 
-                        <!-- <div class="content" id="form">
+                        <div class="content" id="form">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="card card-user">
@@ -382,7 +347,7 @@
                                                 <div class="row">
                                                     <div class="update ml-auto pr-3">
                                                         <button type="button" class="btn btn-primary btn-round"
-                                                            onclick="window.location.href='customer-equipment-repair-details.html'">Edit
+                                                            onclick="window.location.href='sales-customer-equipment-repair-details.html'">Edit
                                                             Order
                                                         </button>
                                                     </div>
@@ -392,7 +357,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
 
 
 
