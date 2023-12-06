@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/OnlyLogo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        ESE System
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+    <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+    <link href="../assets/css/pagination.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="white" data-active-color="danger">
+          <div class="logo">
+            <div class="logo-image-big">
+              <a href="sales-dashboard.html"><img src="../assets/img/Logo2.svg" alt="logo"> </a>
+            </div>
+          </div>
+          <div class="sidebar-wrapper bg-sidebar">
+            <ul class="nav">
+              <li>
+                <a href="./sales-dashboard.html" >
+                  <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon">
+                  <p><strong>Dashboard</strong></p>
+                </a>
+              </li>
+              <li class="active">
+                <a href="./sales-customers.html">
+                  <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
+                  <p><strong>Customers</strong></p>
+                </a>
+              </li>
+              <li>
+                <a href="./sales-orders.html">
+                  <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon">
+                  <p><strong>Repair Orders</strong></p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <img src="../assets/img/reports-icon2.svg" class="icon-img-bar" alt="Management icon" >
+                      <strong>Reports</strong>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right bg-top" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./sales-warranty-report-create.html">Create Warrant Report</a>
+                  <a class="dropdown-item" href="./sales-repair-report-create.html">Create Repair Order Report</a>
+                  <a class="dropdown-item" href="./sales-weekly-report-create.html">Create Weekly Review Report</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-panel">
+        <!--Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
+                </div>
+            </div>
+        </nav>
+      <!-- End Navbar -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-user">
+                            <div class="card-header">
+                                <h5 class="card-title">Customer Details</h5>
+                            </div>
+                            <div class="card-body">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <p><strong>Customer Name:</strong> John Doe</p>
+                                    <p><strong>Address:</strong> 123 Simple St.</p>
+                                    <p><strong>City:</strong> Welland</p>
+                                    <p><strong>Province:</strong> Ontario</p>
+                                    <p><strong>Postal Code:</strong> L5G 8N2</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <p><strong>Email:</strong> johndoe@xyz.com</p>
+                                    <p><strong>Phone Number:</strong> (905) 123-4567</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="update ml-auto pr-3">
+                                    <button type="button" class="btn btn-primary" onclick="window.location.href='sales-customer-edit.html'"><i class="bi bi-pencil-square"></i> Edit Customer</button>
+                                    <button type="button" class="btn btn-danger" onclick="window.location.href='sales-customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                                  </div>
+                                </div>
+                              </div>                
+                            </div>           
+                        </div>   
+                            </div>
+                        </div>
+                        <!-- End Details cards -->
+
+                        <!-- Repair history table-->
+                            <div class="container">
+                                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#card"><i class="bi bi-eye"></i> View Equipment Details <i class="bi bi-caret-down-fill"></i></button>
+                                
+                            </div>
+                            <hr>                            
+                            <div class="card card-user">
+                              <div class="col-lg-12">
+                                <div id="card" class="collapse">
+                                  <table class="table">
+                                    <thead class=" text-primary">
+                                      <tr>
+                                        <th>
+                                          Description
+                                        </th>
+                                        <th >
+                                          Model Number
+                                        </th>
+                                        <th >
+                                          Manufacturer
+                                        </th>                      
+                                        <th >
+                                          Category
+                                        </th>                      
+                                        <th >
+                                          
+                                        </th>  
+                                      </tr>
+                                      </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          Lawnmower H345
+                                        </td>
+                                        <td >
+                                          R456
+                                        </td>
+                                        <td >
+                                          Craftsman
+                                        </td>                        
+                                        <td >
+                                          Lawnmowers
+                                        </td>                        
+                                        <td class="text-right">
+                                          <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"><i class="bi bi-eye"></i> View</button>
+                                        
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Lawnmower PP56
+                                        </td>
+                                        <td >
+                                          TRS-500
+                                        </td>
+                                        <td >
+                                          LTech
+                                        </td>                        
+                                        <td >
+                                          Lawnmowers
+                                        </td>                        
+                                        <td class="text-right">
+                                          <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"><i class="bi bi-eye"></i> View</button>
+                                        
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Recycler 22-inch
+                                        </td>
+                                        <td >
+                                          HRX217VKA
+                                        </td>
+                                        <td >
+                                          STIHL
+                                        </td>                        
+                                        <td >
+                                          Lawnmowers
+                                        </td>                        
+                                        <td class="text-right">
+                                          <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"><i class="bi bi-eye"></i> View</button>                                      
+                                        </td>
+                                      </tr> 
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container">
+                              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#card1"><i class="bi bi-eye"></i> View Repair Orders <i class="bi bi-caret-down-fill"></i></button>
+                          </div>
+                          <hr>
+                          <div class="card card-user">
+                            <div class="col-lg-12">
+                              <div id="card1" class="collapse">
+                                <table class="table">
+                                  <thead class=" text-primary">
+                                    <tr>
+                                      <th>
+                                        Order Number
+                                      </th>
+                                      <th >
+                                        Date (YYYY-MM-DD)
+                                      </th>
+                                      <th >
+                                        Repair Description
+                                      </th>                      
+                                      <th class="text-center">
+                                        Warranty
+                                      </th>                      
+                                      <th class="text-center">
+                                        
+                                      </th>  
+                                    </tr>
+                                    </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        ES-2023-0007
+                                      </td>
+                                      <td >
+                                        2023-01-20
+                                      </td>
+                                      <td >
+                                        Wheel/Tire Repair
+                                      </td>                        
+                                      <td class="text-center">
+                                        No
+                                      </td>                        
+                                      <td class="text-right">
+                                        <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"><i class="bi bi-eye"></i> View</button>
+                                      
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        ES-2023-0019
+                                      </td>
+                                      <td >
+                                        2023-05-17
+                                      </td>
+                                      <td >
+                                        Fuel System Cleaning
+                                      </td>                        
+                                      <td class="text-center">
+                                        Yes
+                                      </td>                        
+                                      <td class="text-right">
+                                        <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"> <i class="bi bi-eye"></i>View</button>
+                                      
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        ES-2023-0167
+                                      </td>
+                                      <td >
+                                        2023-11-03
+                                      </td>
+                                      <td >
+                                        Air Filter Cleaning/Replacement
+                                      </td>                        
+                                      <td class="text-center">
+                                        No
+                                      </td>                        
+                                      <td class="text-right">
+                                        <button class="btn btn-secondary" onclick="window.location.href='sales-order-details.html'"><i class="bi bi-eye"></i> View</button>
+                                    
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="update ml-auto pr-3">
+                                <button class="btn btn-danger"
+                                    onclick="window.location.href='sales-customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                            </div>
+                        </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+            <footer class="footer footer-black  footer-white ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#" target="_blank">Blog</a></li>
+                                <li><a href="#" target="_blank">Licenses</a></li>
+                            </ul>
+                        </nav>
+                        <div class="credits ml-auto">
+                            <span class="copyright">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>, made by Web Genius
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!--   Core JS Files   -->
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('datepicker').value = today;
+    </script>
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+</body>
+
+</html>
