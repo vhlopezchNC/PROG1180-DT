@@ -125,7 +125,7 @@
                     <div class="row">
                         <div class="update ml-auto pr-3">
                             <button class="btn btn-primary"
-                            onclick="window.location.href='weekly-report-view'"><i class="bi bi-printer"></i> Print Report</button>
+                            onclick="printReport()"><i class="bi bi-printer"></i> Print Report</button>
                             <button type="button" class="btn btn-danger"
                                 onclick="window.location.href='weekly-report-create.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                         </div>
@@ -139,7 +139,11 @@
     </div>
     </div>
   </div>
-
+  <script>
+    function printReport() {
+      window.print();
+    }
+  </script>
 
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
