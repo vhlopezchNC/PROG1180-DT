@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/OnlyLogo.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    ESE System
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet">
+  <link href="../assets/css/dashboard-styles.css" rel="stylesheet">
+  <link href="../assets/css/help.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo bg-top">
+            <div class="logo-image-big">
+              <a href="dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
+            </div>
+          </div>
+      <div class="sidebar-wrapper bg-sidebar">
+        <ul class="nav">
+          <li>
+            <a href="./sales-dashboard.html">
+              <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon">
+              <p><strong>Dashboard</strong></p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./sales-customers.html">
+              <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
+              <p><strong>Customers</strong></p>
+            </a>
+          </li>
+          <li>
+            <a href="./sales-orders.html">
+              <img src="../assets/img/checklist-document.svg" class="icon-img-bar" alt="Checklist document icon">
+              <p><strong>Repair Orders</strong></p>
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top bg-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand">EMMA'S SMALL ENGINES</a>
+
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content" id="form">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-user">
+              <div class="card-header d-flex justify-content-between">
+                <h5 class="card-title">Edit Customer</h5>
+                <strong>
+                  <label>
+                    <input type="checkbox" id="enableHelpTips"> Help
+                  </label>
+                </strong>
+                <!-- <label><input type="checkbox" id="helpBox"> Help?</label> -->
+              </div>
+              <div class="card-body">
+                <form id="formSubmission">
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="firstName">First Name: </label>                        
+                        <label id="example">(e.g. John)</label>
+                        <div class="help-tip">
+                          <p>Legal First Name: As on government ID (Driver's License or Passport)</p>
+                        </div>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" value="John"
+                          required>
+                        <span id="firstNameStar" class="star"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <label id="example">(e.g. Davis)</label>                        
+                        <div class="help-tip">
+                          <p>Legal Last Name: As on government ID (Driver's License or Passport)</p>
+                        </div>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" value="Doe"
+                          required>
+                        <span id="lastNameStar" class="star"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="txtaddress">Address:</label>
+                        <label id="example">(e.g. 123 Simple Street)</label>
+         
+                        <div class="help-tip">
+                          <p>Residential Address: Current home address</p>
+                        </div>
+                        <input type="text" id="txtaddress" class="form-control" placeholder="Address" value="123 Simple Street" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="txtCity">City:</label>
+                        <label id="example">(e.g. Toronto)</label>
+                        <div class="help-tip">
+                          <p>City: City of residence</p>
+                        </div>
+                        <input type="text" id="txtCity" class="form-control" placeholder="City" value="Welland" required>
+                      </div>
+                  </div>
+                  <div class="row">                    
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="province">Province:</label>
+                        <div class="help-tip">
+                          <p>Province: Current province of residence</p>
+                        </div>
+                        <select id="province" name="province" class="form-control" required>
+                          <option disabled value="">Select a Province</option>
+                          <option value="AB">Alberta</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="MB">Manitoba</option>
+                          <option value="NB">New Brunswick</option>
+                          <option value="NL">Newfoundland and Labrador</option>
+                          <option value="NS">Nova Scotia</option>
+                          <option selected value="ON">Ontario</option>
+                          <option value="PE">Prince Edward Island</option>
+                          <option value="QC">Quebec</option>
+                          <option value="SK">Saskatchewan</option>
+                          <option value="NT">Northwest Territories</option>
+                          <option value="NU">Nunavut</option>
+                          <option value="YT">Yukon</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="txtPostalCode">Postal Code:</label>
+                        <label id="example">(e.g. X7Y 3F2)</label>
+                        <div class="help-tip">
+                          <p> Postal Code: A postal code can only have letters (A-Z) and numbers (0-9) and must be in the following format: A1A 1A1. </p>
+                        </div>
+                        <input type="text" id="txtPostalCode" class="form-control" placeholder="Postal Code" value="L5G 8N2" required
+                          pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
+                          title="Please enter a valid Canadian postal code (e.g., A1A 1A1)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="email">Email: </label>
+                        <label id="example">(e.g. Email@xyz.com)</label>
+                        <div class="help-tip">
+                          <p>E-mail Address: Valid email for communication (e.g., example@example.com)</p>
+                        </div>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="johndoe@xyz.com">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="txtPhone" >Phone Number: </label>
+                        <label id="example">(e.g. 905 123 4567)</label>
+                        <div class="help-tip">
+                          <p>Phone Number: Primary contact number (10 digits)</p>
+                        </div>
+                        <input type="tel" id="txtPhone" class="form-control" value="9051234567" placeholder="Phone Number" pattern="\d{10}"
+                          title="Please enter 10 numeric digits for the phone number">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="update ml-auto pr-3">
+                      <button type="button" name="submit" class="btn btn-primary"
+                        onclick="window.location.href='sales-customer-equipment-repair-details.html'"><i class="bi bi-floppy"></i> Save changes</button>
+                      <button type="button" class="btn btn-danger"
+                        onclick="window.location.href='sales-customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#" target="_blank">Blog</a></li>
+                <li><a href="#" target="_blank">Licenses</a></li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>, made by Web Genius
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    userForm.getElementById('create').addEventListener('submit', function (event) {
+
+      const firstname = document.getElementById('firstName').value;
+      const lastname = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const phonenumber = document.getElementById('phoneNumber').value;
+
+      const customer = { firstname, lastname, email, phonenumber };
+
+      alert(customer.firstname + customer.lastname + customer.email + customer.phonenumber);
+      //output.innerHTML = `User Information:<br>First Name: ${customer.firstname}<br>Last Name: ${customer.firstname}<br>Email: ${customer.email}<br>Phone: ${customer.phonenumber}`;
+    });
+  </script>
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!--Help-->
+  <script src="../assets/js/required-star.js"></script>
+</body>
+
+</html>
