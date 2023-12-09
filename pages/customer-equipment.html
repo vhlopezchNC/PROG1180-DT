@@ -216,10 +216,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="update ml-auto pr-3">
-                                            <button type="submit" class="btn btn-primary"
-                                                onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-floppy"></i> Save changes and View Summary</button>
-                                            <button type="submit" class="btn btn-danger"
-                                                onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                                          <button type="button" class="btn btn-success" onclick="fillEquipmentValues()"><i class="bi bi-arrow-clockwise"></i> Fill with Pre-generated Values</button>
+                                          <button type="button" class="btn btn-primary"
+                                              onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-floppy"></i> Save changes and View Summary</button>
+                                          <button type="button" class="btn btn-danger"
+                                              onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                                         </div>
                                     </div>
                                 </form>
@@ -262,8 +263,10 @@
     <script src="../assets/js/plugins/chartjs.min.js"></script>
     <!--  Notifications Plugin    -->
     <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-      <!--Help-->
+    <!--Help-->
   <script src="../assets/js/required-star.js"></script>
+    <!--AutoFill-->
+    <script src="../assets/js/fill-customer.js"></script>
 <script>
   $(document).ready(function(){
         $('[data-bs-toggle="tooltip"]').tooltip();
