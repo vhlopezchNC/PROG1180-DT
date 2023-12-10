@@ -1,6 +1,13 @@
-    /* a   :focus {
-        border: 3px solid #8a2be2; 
-    } */
+/* a:focus {
+    border: 3px solid #8a2be2; 
+} */
+
+/* FFCC00 */
+/* 
+input:focus, a:focus, button:focus {
+    outline: 4px solid #8a2be2;
+    box-shadow: 0 0 10px #8a2be2;
+  } */
 
 
 .help-sidebar{
