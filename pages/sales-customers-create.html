@@ -26,10 +26,10 @@
 
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo bg-top">
-            <div class="logo-image-big">
-              <a href="sales-dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
-            </div>
-          </div>
+        <div class="logo-image-big">
+          <a href="sales-dashboard.html"><img src="../assets/img/LogoNavBar.svg" alt="logo"> </a>
+        </div>
+      </div>
       <div class="sidebar-wrapper bg-sidebar">
         <ul class="nav">
           <li>
@@ -51,12 +51,12 @@
             </a>
           </li>
         </ul>
-       
 
-       
-       
-    
-      </div>      
+
+
+
+
+      </div>
     </div>
 
 
@@ -83,21 +83,20 @@
                     <input type="checkbox" id="enableHelpTips"> Help
                   </label>
                 </strong>
-                <!-- <label><input type="checkbox" id="helpBox"> Help?</label> -->
               </div>
-              
-                
-              
+
+
+
               <div class="card-body">
                 <form id="formSubmission">
                   <div class="row">
 
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="firstName">First Name: </label>                        
+                        <label for="firstName">First Name: </label>
                         <label id="example">(e.g. John)</label>
                         <div class="help-tip">
-                          <p>Legal First Name: As on government ID (Driver's License or Passport)</p>
+                          <p>Legal First Name: As listed on government ID (Driver's License or Passport)</p>
                         </div>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
                           required>
@@ -107,9 +106,9 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="lastName">Last Name:</label>
-                        <label id="example">(e.g. Davis)</label>                        
+                        <label id="example">(e.g. Davis)</label>
                         <div class="help-tip">
-                          <p>Legal Last Name: As on government ID (Driver's License or Passport)</p>
+                          <p>Legal Last Name: As listed on government ID (Driver's License or Passport)</p>
                         </div>
                         <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
                           required>
@@ -137,8 +136,8 @@
                         </div>
                         <input type="text" id="txtCity" class="form-control" placeholder="City" required>
                       </div>
-                  </div>
-                  <div class="row">                    
+                    </div>
+                    <div class="row">
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
@@ -169,7 +168,8 @@
                         <label for="txtPostalCode">Postal Code:</label>
                         <label id="example">(e.g. X7Y 3F2)</label>
                         <div class="help-tip">
-                          <p> Postal Code: A postal code can only have letters (A-Z) and numbers (0-9) and must be in the following format: A1A 1A1. </p>
+                          <p> Postal Code: A postal code can only have letters (A-Z) and numbers (0-9) and must be in
+                            the following format: A1A 1A1. </p>
                         </div>
                         <input type="text" id="txtPostalCode" class="form-control" placeholder="Postal Code" required
                           pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d"
@@ -190,7 +190,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="txtPhone" >Phone Number: </label>
+                        <label for="txtPhone">Phone Number: </label>
                         <label id="example">(e.g. 905 123 4567)</label>
                         <div class="help-tip">
                           <p>Phone Number: Primary contact number (10 digits)</p>
@@ -204,7 +204,8 @@
                   <div class="row">
                     <div class="update ml-auto pr-3">
                       <button type="submit" name="submit" class="btn btn-primary"
-                        onclick="window.location.href='sales-customer-equipment.html'"><i class="bi bi-floppy"></i> Save changes and Add Equipment</button>
+                        onclick="window.location.href='sales-customer-equipment.html'"><i class="bi bi-floppy"></i> Save
+                        changes and Add Equipment</button>
                       <button type="button" class="btn btn-danger"
                         onclick="window.location.href='sales-customers.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                     </div>
@@ -265,9 +266,9 @@
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!--Help-->
   <script src="../assets/js/required-star.js"></script>
-<script>
-  $(document).ready(function(){
-        $('[data-bs-toggle="tooltip"]').tooltip();
+  <script>
+    $(document).ready(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip();
     });
   </script>
 </body>
