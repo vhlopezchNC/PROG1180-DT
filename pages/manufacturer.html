@@ -88,6 +88,20 @@
             </div>
           </li>
         </ul>
+<div class="font-slider-wrapper">
+          <p>Accessibility</p>
+          <hr class="white-hr"/>
+          <label for="fontSlider">Ajdust Font Size</label>
+          <br/>
+          <input type="range" min="10" max="26" value="16" id="fontSlider" oninput="adjustFontSize(this.value)">
+          <br>          
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input card-checkbox" id="customSwitch1"  onclick="toggleContrast(this)">
+            <label class="custom-control-label" for="customSwitch1">
+              Contrast
+            </label>
+          </div>
+        </div>
       </div>
     </div>
     <!--Left Sidebar-->
@@ -259,6 +273,8 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!--Help-->
+  <script src="../assets/js/required-star.js"></script>
   <!-- Search Bar-->
   <script src="../assets/js/search-bar.js"></script>
   <!--Filtering -->
