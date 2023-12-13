@@ -141,6 +141,6 @@ li a:hover .icon-img-bar{
   }
 
   .high-contrast { /*Change values here......*/
-    color: white;
-    background-color: red;    
+    color: white !important;
+    background-color: black !important;    
   }
