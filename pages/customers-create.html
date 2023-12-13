@@ -131,13 +131,9 @@
                   </label>
                 </strong>
               </div>
-
-
-
               <div class="card-body">
-                <form id="formSubmission">
+                <form id="formSubmission" action="customer-equipment.html">
                   <div class="row">
-
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="firstName">First Name: </label>
@@ -232,7 +228,7 @@
                         <div class="help-tip">
                           <p>E-mail Address: Valid email for communication (e.g., example@example.com)</p>
                         </div>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -243,7 +239,7 @@
                           <p>Phone Number: Primary contact number (10 digits)</p>
                         </div>
                         <input type="tel" id="txtPhone" class="form-control" placeholder="Phone Number" pattern="\d{10}"
-                          title="Please enter 10 numeric digits for the phone number">
+                          title="Please enter 10 numeric digits for the phone number" required>
                       </div>
                     </div>
                   </div>
@@ -252,14 +248,12 @@
                     <div class="update ml-auto pr-3">
                       <button type="button" class="btn btn-success" onclick="fillCustomerValues()"><i
                           class="bi bi-arrow-clockwise"></i> Fill with Pre-generated Values</button>
-                      <button type="button" name="submit" class="btn btn-primary"
-                        onclick="window.location.href='customer-equipment.html'"><i class="bi bi-floppy"></i> Save
+                      <button type="submit" name="submit" class="btn btn-primary"><i class="bi bi-floppy"></i> Save
                         changes and Add Equipment</button>
                       <button type="button" class="btn btn-danger" onclick="window.location.href='customers.html'"><i
                           class="bi bi-x-lg"></i> Cancel</button>
                     </div>
                   </div>
-
                 </form>
               </div>
             </div>
@@ -302,6 +296,8 @@
       alert(customer.firstname + customer.lastname + customer.email + customer.phonenumber);
       //output.innerHTML = `User Information:<br>First Name: ${customer.firstname}<br>Last Name: ${customer.firstname}<br>Email: ${customer.email}<br>Phone: ${customer.phonenumber}`;
     });
+
+    
   </script>
 
   <!--   Core JS Files   -->
