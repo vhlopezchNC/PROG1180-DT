@@ -153,7 +153,7 @@
                           <div class="help-tip">
                             <p>Start Date: Enter the start date for requested report</p>
                           </div>
-                          <input type="date" class="form-control" required>
+                          <input id="start" type="date" class="form-control" required>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -162,7 +162,7 @@
                           <div class="help-tip">
                             <p>End Date: Enter the end date for requested report</p>
                           </div>
-                          <input type="date" class="form-control" required>
+                          <input id="end" type="date" class="form-control" required>
                         </div>
                       </div>
                     </div>
@@ -173,7 +173,7 @@
                           <div class="help-tip">
                             <p>Maunfactuer: Select the manufactuer for requested report</p>
                           </div>
-                          <select id="manufacturer" name="manufacturer" class="form-control" required>
+                          <select id="manufacturer2" name="manufacturer" class="form-control" required>
                             <option selected disabled value="">Select a Manufacturer</option>
                             <option value="CM">Craftsman</option>
                             <option value="HD">Honda</option>
@@ -206,6 +206,7 @@
                     </div> -->
                     <div class="row">
                       <div class="update ml-auto pr-3">
+                        <button type="button" class="btn btn-success" onclick="fillWarrantyReportValues()"><i class="bi bi-arrow-clockwise"></i> AutoFill Values</button>
                         <button type="button" class="btn btn-primary"
                           onclick="window.location.href='warranty-report-view.html'"><i class="bi bi-eye"></i> Preview
                           Report</button>
@@ -261,6 +262,8 @@
   <script src="../assets/js/filtering.js"></script>
   <!--Help-->
   <script src="../assets/js/required-star.js"></script>
+  <!--AutoFill-->
+  <script src="../assets/js/fill-customer.js"></script>
   <script>
     $(document).ready(function () {
       $('[data-bs-toggle="tooltip"]').tooltip();

@@ -149,7 +149,7 @@
                                     <div class="help-tip">
                                       <p>Technician is automatically generated based on Technician login.</p>
                                     </div>
-                                    <input id="technician" type="text" class="form-control" id="inputTechnician" placeholder="Ryan Cote" disabled>
+                                    <input id="technician" type="text" class="form-control" id="inputTechnician" placeholder="Eugene" disabled>
                                     <div id="technicianDropdownOptions" class="dropdown-options dropdown-option"></div>
                                 </div>
                             </div>
@@ -177,11 +177,11 @@
                           <div class="row">     
                               <div class="col-lg-12">
                                   <div class="form-group">
-                                      <label for="textAreaDescription">Description (e.g. Engine Failure: Unable to Start)</label>
+                                      <label for="textAreaDescription2">Description (e.g. Engine Failure: Unable to Start)</label>
                                       <div class="help-tip">
                                         <p>Description to include the repair notes of equipement.</p>
                                       </div>
-                                      <textarea class="form-control" id="textAreaDescription" placeholder="Description"></textarea>
+                                      <textarea class="form-control" id="textAreaDescription2" placeholder="Description"></textarea>
                                   </div>
                               </div>
                           </div>
@@ -192,7 +192,7 @@
                                       <div class="help-tip">
                                         <p>Update status of repair order.</p>
                                       </div>
-                                      <select id="Status" name="status" class="form-control" required>
+                                      <select id="status" name="status" class="form-control" required>
                                           <option selected disabled value="">Select an option</option>
                                           <option value="1">Completed</option>
                                           <option value="2">In Progress</option>
@@ -203,8 +203,9 @@
                           </div>
                           <div class="row">
                               <div class="update ml-auto pr-3">
-                                  <button type="button" class="btn btn-primary" onclick="window.location.href='worklog-update.html'"><i class="bi bi-floppy"></i> Save changes</button>
-                                  <button type="button" class="btn btn-danger" onclick="window.location.href='orders.html'"><i class="bi bi-x-lg"></i> Cancel</button>
+                                <button type="button" class="btn btn-success" onclick="fillWorkLogValues()"><i class="bi bi-arrow-clockwise"></i> AutoFill Values</button>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='worklog-update.html'"><i class="bi bi-floppy"></i> Save changes</button>
+                                <button type="button" class="btn btn-danger" onclick="window.location.href='worklogs.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                               </div>
                           </div>
                       </form>
@@ -325,8 +326,10 @@
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Search Bar-->
   <script src="../assets/js/worklog.js"></script>
-        <!--Help-->
+  <!--Help-->
   <script src="../assets/js/required-star.js"></script>
+  <!--AutoFill-->
+  <script src="../assets/js/fill-customer.js"></script>
  
 <script>
   $(document).ready(function(){

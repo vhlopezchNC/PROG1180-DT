@@ -192,7 +192,7 @@
                                                 <div class="help-tip">
                                                     <p>Warranty: Is the equipment covered by warranty?</p>
                                                     </div> 
-                                                <select id="Warranty" name="warranty" class="form-control" required>
+                                                <select id="warranty" name="warranty" class="form-control" required>
                                                     <option selected disabled value="">Select an option</option>
                                                     <option value="1">Yes</option>
                                                     <option value="2">No</option>
@@ -204,6 +204,7 @@
 
                                     <div class="row">
                                         <div class="update ml-auto pr-3">
+                                          <button type="button" class="btn btn-success" onclick="fillRepairOrderValues()"><i class="bi bi-arrow-clockwise"></i> AutoFill Values</button>
                                             <button type="button" class="btn btn-primary"
                                                 onclick="window.location.href='customer-equipment-summary.html'"><i class="bi bi-plus-lg"></i> Add Repair Order</button>
                                             <button type="button" class="btn btn-danger"
@@ -256,8 +257,10 @@
     <script src="../assets/js/plugins/chartjs.min.js"></script>
     <!--  Notifications Plugin    -->
     <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-      <!--Help-->
-  <script src="../assets/js/required-star.js"></script>
+    <!--Help-->
+    <script src="../assets/js/required-star.js"></script>
+    <!--AutoFill-->
+    <script src="../assets/js/fill-customer.js"></script>
 <script>
   $(document).ready(function(){
         $('[data-bs-toggle="tooltip"]').tooltip();
