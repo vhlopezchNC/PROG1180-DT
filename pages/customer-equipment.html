@@ -29,13 +29,13 @@
           </div>
       <div class="sidebar-wrapper bg-sidebar">
         <ul class="nav">
-          <li class="active">
+          <li>
             <a href="./dashboard.html">
               <img src="../assets/img/dashboard.svg" class="icon-img-bar" alt="Dashboard icon">
               <p><strong>Quick Links</strong></p>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="./customers.html">
               <img src="../assets/img/customer.svg" class="icon-img-bar" alt="Customer icon">
               <p><strong>Customers</strong></p>
@@ -132,7 +132,7 @@
                                 </strong>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form action="customer-equipment-repair-details.html">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
@@ -153,8 +153,7 @@
                                                 <div class="help-tip">
                                                   <p>Model Number of the equipment</p>
                                                 </div>
-                                                <input id="txtModelNumber" type="text" class="form-control" placeholder="Model Number"
-                                                    required>
+                                                <input id="txtModelNumber" type="text" class="form-control" placeholder="Model Number" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -214,9 +213,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="update ml-auto pr-3">
+<<<<<<< HEAD
                                           <button type="button" class="btn btn-success" onclick="fillEquipmentValues()"><i class="bi bi-arrow-clockwise"></i> AutoFill Values</button>
                                           <button type="button" class="btn btn-primary"
                                               onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-floppy"></i> Save changes and View Summary</button>
+=======
+                                          <button type="button" class="btn btn-success" onclick="fillEquipmentValues()"><i class="bi bi-arrow-clockwise"></i> Fill with Pre-generated Values</button>
+                                          <button type="submit" class="btn btn-primary"><i class="bi bi-floppy"></i> Save changes and View Summary</button>
+>>>>>>> 5189031cac9a4a8b921c20220a78c7f93d38b2a3
                                           <button type="button" class="btn btn-danger"
                                               onclick="window.location.href='customer-equipment-repair-details.html'"><i class="bi bi-x-lg"></i> Cancel</button>
                                         </div>
