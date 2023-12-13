@@ -88,7 +88,22 @@
             </div>
           </li>
         </ul>
+        <div class="font-slider-wrapper">
+          <p>Accessibility</p>
+          <hr class="white-hr"/>
+          <label for="fontSlider">Ajdust Font Size</label>
+          <br/>
+          <input type="range" min="10" max="26" value="16" id="fontSlider" oninput="adjustFontSize(this.value)">
+          <br>          
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input card-checkbox" id="customSwitch1"  onclick="toggleContrast(this)">
+            <label class="custom-control-label" for="customSwitch1">
+              Contrast
+            </label>
+          </div>
+        </div>
       </div>
+      
     </div>
     <!--Left Sidebar-->
     <!--Navbar -->
@@ -317,6 +332,20 @@
     $(document).ready(function () {
       $('[data-bs-toggle="tooltip"]').tooltip();
     });
+
+    function adjustFontSize(size) {
+      document.body.style.fontSize = size + 'px';
+    }
+
+    function toggleContrast(element) {
+    const body = document.querySelector('body');
+    if (element.checked) {
+      body.classList.add('high-contrast');
+    } else {
+      body.classList.remove('high-contrast');
+    }
+  }
+    
   </script>
 </body>
 

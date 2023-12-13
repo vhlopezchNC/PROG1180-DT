@@ -104,3 +104,43 @@ li a:hover .icon-img-bar{
     background-color: #333333;
     color: #FFFFFF;
   }
+
+  .font-slider-wrapper {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.white-hr {
+    border-color: white;
+}
+
+/* toggle container */
+.card-checkbox.custom-control-input:not(:checked) ~ .custom-control-label::before {
+    background-color: #0C2E4E; /* Change the background color of the toggle container  when it is not checked */
+    border-color: #fff; /* Change the border color of the toggle container when it is not checked */
+  }
+  
+  .card-checkbox.custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #FF1616; /* Change the color of the toggle container when it is checked */
+      border-color: #fff; /* Change the border color of the toggle container when it is checked */
+  }
+  
+  /* toggle knob */
+  .card-checkbox.checkbox-outside-card.custom-control-input:not(:checked) ~ .custom-control-label::after {
+    background-color: #fff; /* Change the background color of the knob when it is checked */
+    border: 2px solid #fff; /* Add a border if you prefer */
+  }
+  
+  .card-checkbox.checkbox-outside-card.custom-control-input:checked ~ .custom-control-label::after {
+    background-color: pink; /* Change the background color of the knob when it is checked */
+    border: 2px solid #fff; /* Add a border if you prefer */
+  }
+
+  .high-contrast { /*Change values here......*/
+    color: white;
+    background-color: red;    
+  }

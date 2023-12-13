@@ -87,6 +87,10 @@
             </div>
           </li>
         </ul>
+        <div>
+          <label for="fontSlider">Ajustar Tamaño de Letra</label>
+          <input type="range" min="10" max="30" value="16" id="fontSlider" oninput="adjustFontSize(this.value)">
+        </div>
       </div>
     </div>
     <!--Left Sidebar-->
@@ -268,6 +272,10 @@
   $(document).ready(function(){
         $('[data-bs-toggle="tooltip"]').tooltip();
     });
+
+    function adjustFontSize(size) {
+      document.body.style.fontSize = size + 'px';
+    }
   </script>
 </body>
 </html>
